@@ -98,7 +98,7 @@ namespace WindowsFormsApplication17
             Begin();
             return Convert.ToDouble(dt.Compute(FindExpression(str, location), string.Empty));
         }
-        public static string Simpler(string str)
+        /*public static string Simpler(string str)
         {
             int lastLenght = str.Length;
             int st = 0;
@@ -125,27 +125,86 @@ namespace WindowsFormsApplication17
                 }
             return str; 
                         
+        }*/
+        /*public string Simpler(string str)
+        {
+            int step = 1;
+            int marker1;
+            for(int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == '(')
+                {
+                    if(step == 0) marker1 = i;
+                    step++;
+                }
+                else if (str[i] == ')')
+                    if(step == 1)
+                    {
+
+                        //str = str.Substring(0, i) + CountBracket(str.Substring(marker1, i)) + str.Substring(i + 1,);
+                    }
+                    else
+                    step--;
+            }
         }
+        public string CountBracket(string str, int begin, int end, int mode)
+        {
+            try
+            {
+                if(priora[str[begin - 1]] >= 3)
+                {
+                    try
+                    {
+                        int marker1;
+                        int step = 0;
+                        for(int i = begin - 2; i >= 0; i--)
+                        {
+                            if (str[i] == '(')
+                            {
+                                if(step == 0) marker1 = i;
+                                step++;
+                            }
+                            else if (str[i] == ')')
+                                if(step == 1)
+                                {
+
+                                    
+                                }
+                                else
+                                step--;
+                            //else if()
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        begin--;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }*/
         public static double Compute(string str, char ch, double polish)
         {
-            Polish = polish;
             Begin();
-            return FindXExpression(Simpler(str), ch);
+            return FindXExpression(str, ch);
         }
-        public static int FindXExpression(string str, char ch)
+        public static double FindXExpression(string str, char ch)
         {
             string tempstring = str;
-            int value = 0;
+            double value = -1;
                 do
                 {
+                    value++;
                     str = tempstring;
                     for (int i = 0; i < str.Length; i++)
                         if (str[i] == ch)
-                            str = str.Substring(0, i) + value + str.Substring(i + 1, str.Length - i - 1);
-                    value++;
+                            str = str.Substring(0, i) + "(" + value + "/" + (1 / Polish) + ")" + str.Substring(i + 1, str.Length - i - 1);
                 }
                 while (!Convert.ToBoolean(dt.Compute(str, string.Empty)));
-            return value;
+            return value * Polish;
         }
     }
 }
