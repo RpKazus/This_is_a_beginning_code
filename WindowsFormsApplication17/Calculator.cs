@@ -83,7 +83,7 @@ namespace WindowsFormsApplication17
                             else
                                 return str.Substring(i + 1,root - i - 1);
                         }
-                        if (i == 1)
+                        if (i == 0)
                             return str.Substring(0, root);
                     }
                 return str.Substring(0, root);
