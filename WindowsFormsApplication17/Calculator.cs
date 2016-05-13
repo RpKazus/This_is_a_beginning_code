@@ -19,6 +19,28 @@ namespace WindowsFormsApplication17
             string rd = FindValue(step, str, true);
             return st + str[step] + rd;
         }
+        public int Find(string str, char ch)
+        {
+            int stat = 0;
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == '(')
+                    stat++;
+                else if (str[i] == ')')
+                    stat--;
+                else if (str[i] == ')' && stat > 0)
+                    stat--;
+                else if (str[i] == ')' && stat <= 0)
+                    return i - 1;
+                else if (stat == 0 && (str[i] == ch))
+                    return i;
+            }
+            return -1;
+        }
+        public string Simpler(string str)
+        {
+
+        }
         private static void Begin()
         {
             if (priora.Count == 0)
@@ -186,6 +208,40 @@ namespace WindowsFormsApplication17
 
             }
         }*/
+        public string Simpler(string str,int beg, int end, int mode)
+        {
+            string st = "";
+            string nd = "";
+            int lastLenght = str.Length;
+            if (str[beg - 1] == '*' || str[beg - 1] == '/' && mode != 2)
+                st = Simpler(str, beg - 1 - FindValue(beg - 1, str, false).Length, beg - 2, 0) + str[beg - 1];
+            else if(str[beg - 1] == '-')
+            {
+                str = str.Substring(0, beg) + str.Substring(beg, end + 1).Replace('+', '$') + str.Substring(end + 1, str.Length - 1 - end);
+                str = str.Substring(0, beg) + str.Substring(beg, end + 1).Replace('-', '#') + str.Substring(end + 1, str.Length - 1 - end);
+                str = str.Substring(0, beg) + str.Substring(beg, end + 1).Replace('$', '-') + str.Substring(end + 1, str.Length - 1 - end);
+                str = str.Substring(0, beg) + str.Substring(beg, end + 1).Replace('#', '+') + str.Substring(end + 1, str.Length - 1 - end);
+            }
+            if (str[end + 1] == '*' || str[end + 1] == '/' && mode != 0)
+                nd = str[end + 1] + Simpler(str, end + 2, end + 1 + FindValue(end + 1, str, true).Length, 2);
+            str = str.Substring(0, beg) + str.Substring(beg, end + 1).Replace("+", nd + "+") + str.Substring(end + 1, str.Length - 1 - end);
+            str = str.Substring(0, beg) + str.Substring(beg, end + 1).Replace("+", "+" + st) + str.Substring(end + 1, str.Length - 1 - end);
+            str = str.Substring(0, beg) + str.Substring(beg, end + 1).Replace("-", nd + "-") + str.Substring(end + 1, str.Length - 1 - end);
+            str = str.Substring(0, beg) + str.Substring(beg, end + 1).Replace("-", "-" + st) + str.Substring(end + 1, str.Length - 1 - end);
+            str = str.Substring(0, beg) + str.Substring(beg, end + 1).Replace("*", nd + "*") + str.Substring(end + 1, str.Length - 1 - end);
+            str = str.Substring(0, beg) + str.Substring(beg, end + 1).Replace("*", "*" + st) + str.Substring(end + 1, str.Length - 1 - end);
+            str = str.Substring(0, beg) + str.Substring(beg, end + 1).Replace("/", nd + "/") + str.Substring(end + 1, str.Length - 1 - end);
+            str = str.Substring(0, beg) + str.Substring(beg, end + 1).Replace("/", "/" + st) + str.Substring(end + 1, str.Length - 1 - end);
+            try
+            {
+                return dt.Compute(str, string.Empty).ToString();
+            }
+            catch (Exception)
+            {
+
+            }
+            return str.Substring(1, str.Length - 1);
+        }
         public static double Compute(string str, char ch, double polish)
         {
             Begin();
