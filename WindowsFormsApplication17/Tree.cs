@@ -11,7 +11,6 @@ namespace WindowsFormsApplication17
         public string value;
         public Tree leftTree;
         public Tree rightTree;
-        public int step;
         public int length
         {
             get

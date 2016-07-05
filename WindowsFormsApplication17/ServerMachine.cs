@@ -7,8 +7,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication17
 {
-    class Tools : Panel
+    static class ServerMachine
     {
+        public static string primer;
+        public static string transtab;
+        public static string type;
+        public static MethodInvoker MethodToMath;
 
     }
 }
