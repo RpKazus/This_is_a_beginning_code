@@ -47,6 +47,12 @@
     <Compile Include="AdvancedButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ButtonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ButtonForm.Designer.cs">
+      <DependentUpon>ButtonForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Calculator.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -76,6 +82,9 @@
     <Compile Include="ViewForm.Designer.cs">
       <DependentUpon>ViewForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ButtonForm.resx">
+      <DependentUpon>ButtonForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +143,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cletch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\тудыть.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\оттудыть.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\тудыть_вкл.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\оттудыть_вкл.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\листок.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\угол.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\листок_2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

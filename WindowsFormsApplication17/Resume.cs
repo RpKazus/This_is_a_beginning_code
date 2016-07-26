@@ -14,6 +14,7 @@ namespace WindowsFormsApplication17
         public Label NameLabel = new Label();
         public Button deleteButton = new Button();
         public Rectangle rect;
+        //public Dictionary<Control, string> textDictionary;
         public Resume(string Name, string Link, Control parent, Size size)
         {
             NameLabel.Text = Name;

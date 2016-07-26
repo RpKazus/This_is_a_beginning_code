@@ -37,41 +37,37 @@
             this.добавитьКToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.кРешениюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.кToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabPanel = new System.Windows.Forms.Panel();
-            this.advancedButton3 = new WindowsFormsApplication17.AdvancedButton();
-            this.advancedButton2 = new WindowsFormsApplication17.AdvancedButton();
-            this.advancedButton1 = new WindowsFormsApplication17.AdvancedButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.button49 = new System.Windows.Forms.Button();
             this.button41 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
             this.Ravno = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
+            this.button48 = new System.Windows.Forms.Button();
+            this.button_button = new System.Windows.Forms.Button();
             this.button36 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
+            this.button45 = new System.Windows.Forms.Button();
+            this.button46 = new System.Windows.Forms.Button();
             this.MathPage = new System.Windows.Forms.TabPage();
-            this.textPan = new System.Windows.Forms.Panel();
-            this.button61 = new System.Windows.Forms.Button();
             this.text2 = new System.Windows.Forms.RichTextBox();
             this.text1 = new System.Windows.Forms.RichTextBox();
+            this.prusbutton = new System.Windows.Forms.Button();
+            this.textPan = new System.Windows.Forms.Panel();
+            this.untoodit = new System.Windows.Forms.PictureBox();
+            this.toodit = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.journal3 = new WindowsFormsApplication17.Journal();
-            this.switcher2 = new WindowsFormsApplication17.Switcher();
             this.button40 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button42 = new System.Windows.Forms.Button();
             this.button43 = new System.Windows.Forms.Button();
             this.button44 = new System.Windows.Forms.Button();
-            this.button45 = new System.Windows.Forms.Button();
-            this.button46 = new System.Windows.Forms.Button();
-            this.button47 = new System.Windows.Forms.Button();
-            this.button48 = new System.Windows.Forms.Button();
             this.button50 = new System.Windows.Forms.Button();
             this.button51 = new System.Windows.Forms.Button();
             this.button52 = new System.Windows.Forms.Button();
@@ -89,8 +85,8 @@
             this.button33 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ParcePage = new System.Windows.Forms.TabPage();
+            this.button80 = new System.Windows.Forms.Button();
             this.label_proschet = new System.Windows.Forms.Label();
-            this.switcher1 = new WindowsFormsApplication17.Switcher();
             this.textBox2 = new System.Windows.Forms.RichTextBox();
             this.button32 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -111,9 +107,8 @@
             this.button26 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.journal2 = new WindowsFormsApplication17.Journal();
             this.CalculatorPage = new System.Windows.Forms.TabPage();
-            this.journal1 = new WindowsFormsApplication17.Journal();
+            this.button79 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -138,18 +133,64 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabCon = new System.Windows.Forms.TabControl();
+            this.NotePage1 = new System.Windows.Forms.TabPage();
+            this.ProLabel = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.X2 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.labelBig1 = new System.Windows.Forms.Label();
+            this.X = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button81 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button62 = new System.Windows.Forms.Button();
+            this.button63 = new System.Windows.Forms.Button();
+            this.button64 = new System.Windows.Forms.Button();
+            this.button65 = new System.Windows.Forms.Button();
+            this.button66 = new System.Windows.Forms.Button();
+            this.button67 = new System.Windows.Forms.Button();
+            this.button68 = new System.Windows.Forms.Button();
+            this.button70 = new System.Windows.Forms.Button();
+            this.button71 = new System.Windows.Forms.Button();
+            this.button72 = new System.Windows.Forms.Button();
+            this.button73 = new System.Windows.Forms.Button();
+            this.button74 = new System.Windows.Forms.Button();
+            this.button75 = new System.Windows.Forms.Button();
+            this.button76 = new System.Windows.Forms.Button();
+            this.button77 = new System.Windows.Forms.Button();
+            this.button78 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.RichTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.NotePanel = new System.Windows.Forms.Panel();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.NotePage = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.advancedButton4 = new WindowsFormsApplication17.AdvancedButton();
+            this.advancedButton3 = new WindowsFormsApplication17.AdvancedButton();
+            this.advancedButton2 = new WindowsFormsApplication17.AdvancedButton();
+            this.advancedButton1 = new WindowsFormsApplication17.AdvancedButton();
+            this.journal1 = new WindowsFormsApplication17.Journal();
+            this.switcher1 = new WindowsFormsApplication17.Switcher();
+            this.journal2 = new WindowsFormsApplication17.Journal();
+            this.switcher2 = new WindowsFormsApplication17.Switcher();
+            this.journal3 = new WindowsFormsApplication17.Journal();
+            this.journal4 = new WindowsFormsApplication17.Journal();
             this.tools1 = new WindowsFormsApplication17.ToolBox();
             this.contextMenuStrip1.SuspendLayout();
-            this.tabPanel.SuspendLayout();
             this.MathPage.SuspendLayout();
             this.textPan.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.switcher2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.untoodit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toodit)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.OptionsPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.ParcePage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.switcher1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.CalculatorPage.SuspendLayout();
@@ -157,6 +198,15 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tabCon.SuspendLayout();
+            this.NotePage1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.NotePage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.switcher1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.switcher2)).BeginInit();
             this.SuspendLayout();
             // 
             // ExceptionTimer
@@ -210,51 +260,6 @@
             this.кToolStripMenuItem.Text = "Ответ";
             this.кToolStripMenuItem.Click += new System.EventHandler(this.кToolStripMenuItem_Click);
             // 
-            // tabPanel
-            // 
-            this.tabPanel.BackColor = System.Drawing.Color.Silver;
-            this.tabPanel.BackgroundImage = global::WindowsFormsApplication17.Properties.Resources.BackImage;
-            this.tabPanel.Controls.Add(this.advancedButton3);
-            this.tabPanel.Controls.Add(this.advancedButton2);
-            this.tabPanel.Controls.Add(this.advancedButton1);
-            this.tabPanel.Location = new System.Drawing.Point(-271, 0);
-            this.tabPanel.Name = "tabPanel";
-            this.tabPanel.Size = new System.Drawing.Size(500, 517);
-            this.tabPanel.TabIndex = 1;
-            // 
-            // advancedButton3
-            // 
-            this.advancedButton3.BackColor = System.Drawing.Color.Transparent;
-            this.advancedButton3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("advancedButton3.BackgroundImage")));
-            this.advancedButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.advancedButton3.Location = new System.Drawing.Point(283, 134);
-            this.advancedButton3.Name = "advancedButton3";
-            this.advancedButton3.Size = new System.Drawing.Size(168, 45);
-            this.advancedButton3.TabIndex = 2;
-            this.advancedButton3.Tag = "    МАТЕМ. ВВОД";
-            // 
-            // advancedButton2
-            // 
-            this.advancedButton2.BackColor = System.Drawing.Color.Transparent;
-            this.advancedButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("advancedButton2.BackgroundImage")));
-            this.advancedButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.advancedButton2.Location = new System.Drawing.Point(294, 80);
-            this.advancedButton2.Name = "advancedButton2";
-            this.advancedButton2.Size = new System.Drawing.Size(168, 45);
-            this.advancedButton2.TabIndex = 1;
-            this.advancedButton2.Tag = "        СКОБКИ";
-            // 
-            // advancedButton1
-            // 
-            this.advancedButton1.BackColor = System.Drawing.Color.Transparent;
-            this.advancedButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("advancedButton1.BackgroundImage")));
-            this.advancedButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.advancedButton1.Location = new System.Drawing.Point(306, 26);
-            this.advancedButton1.Name = "advancedButton1";
-            this.advancedButton1.Size = new System.Drawing.Size(168, 44);
-            this.advancedButton1.TabIndex = 0;
-            this.advancedButton1.Tag = "   КАЛЬКУЛЯТОР";
-            // 
             // button49
             // 
             this.button49.BackColor = System.Drawing.Color.Yellow;
@@ -264,7 +269,7 @@
             this.button49.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
             this.button49.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button49.Font = new System.Drawing.Font("Microsoft Sans Serif", 38.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button49.Location = new System.Drawing.Point(51, 18);
+            this.button49.Location = new System.Drawing.Point(54, 88);
             this.button49.Name = "button49";
             this.button49.Size = new System.Drawing.Size(129, 60);
             this.button49.TabIndex = 15;
@@ -287,31 +292,6 @@
             this.toolTip1.SetToolTip(this.button41, "Очистить поле");
             this.button41.UseVisualStyleBackColor = true;
             this.button41.Click += new System.EventHandler(this.button41_Click);
-            // 
-            // button39
-            // 
-            this.button39.FlatAppearance.BorderSize = 0;
-            this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button39.Image = global::WindowsFormsApplication17.Properties.Resources.watch;
-            this.button39.Location = new System.Drawing.Point(30, 34);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(24, 24);
-            this.button39.TabIndex = 29;
-            this.toolTip1.SetToolTip(this.button39, "Открытый обзор");
-            this.button39.UseVisualStyleBackColor = true;
-            // 
-            // button38
-            // 
-            this.button38.Enabled = false;
-            this.button38.FlatAppearance.BorderSize = 0;
-            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button38.Image = global::WindowsFormsApplication17.Properties.Resources.write_out;
-            this.button38.Location = new System.Drawing.Point(60, 34);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(24, 24);
-            this.button38.TabIndex = 30;
-            this.toolTip1.SetToolTip(this.button38, "режим редактирования");
-            this.button38.UseVisualStyleBackColor = true;
             // 
             // button18
             // 
@@ -337,7 +317,7 @@
             // 
             this.button31.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button31.ForeColor = System.Drawing.Color.Red;
-            this.button31.Location = new System.Drawing.Point(287, 418);
+            this.button31.Location = new System.Drawing.Point(287, 419);
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(64, 60);
             this.button31.TabIndex = 21;
@@ -345,32 +325,6 @@
             this.toolTip1.SetToolTip(this.button31, "Очистить поле");
             this.button31.UseVisualStyleBackColor = true;
             this.button31.Click += new System.EventHandler(this.button31_Click);
-            // 
-            // button34
-            // 
-            this.button34.FlatAppearance.BorderSize = 0;
-            this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button34.Image = global::WindowsFormsApplication17.Properties.Resources.watch;
-            this.button34.Location = new System.Drawing.Point(30, 34);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(24, 24);
-            this.button34.TabIndex = 29;
-            this.toolTip1.SetToolTip(this.button34, "Открытый обзор");
-            this.button34.UseVisualStyleBackColor = true;
-            this.button34.Click += new System.EventHandler(this.button34_Click);
-            // 
-            // button35
-            // 
-            this.button35.Enabled = false;
-            this.button35.FlatAppearance.BorderSize = 0;
-            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button35.Image = global::WindowsFormsApplication17.Properties.Resources.write_out;
-            this.button35.Location = new System.Drawing.Point(60, 34);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(24, 24);
-            this.button35.TabIndex = 30;
-            this.toolTip1.SetToolTip(this.button35, "режим редактирования");
-            this.button35.UseVisualStyleBackColor = true;
             // 
             // Ravno
             // 
@@ -426,19 +380,30 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // button37
+            // button48
             // 
-            this.button37.Enabled = false;
-            this.button37.FlatAppearance.BorderSize = 0;
-            this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button37.Image = global::WindowsFormsApplication17.Properties.Resources.watch;
-            this.button37.Location = new System.Drawing.Point(30, 34);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(24, 24);
-            this.button37.TabIndex = 31;
-            this.toolTip1.SetToolTip(this.button37, "Открытый обзор");
-            this.button37.UseVisualStyleBackColor = true;
-            this.button37.Click += new System.EventHandler(this.button37_Click);
+            this.button48.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button48.ForeColor = System.Drawing.Color.Red;
+            this.button48.Location = new System.Drawing.Point(293, 414);
+            this.button48.Name = "button48";
+            this.button48.Size = new System.Drawing.Size(64, 60);
+            this.button48.TabIndex = 20;
+            this.button48.Text = "✖";
+            this.toolTip1.SetToolTip(this.button48, "очистить поле");
+            this.button48.UseVisualStyleBackColor = true;
+            // 
+            // button_button
+            // 
+            this.button_button.FlatAppearance.BorderSize = 0;
+            this.button_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_button.Image = global::WindowsFormsApplication17.Properties.Resources.button1;
+            this.button_button.Location = new System.Drawing.Point(230, 2);
+            this.button_button.Name = "button_button";
+            this.button_button.Size = new System.Drawing.Size(24, 24);
+            this.button_button.TabIndex = 34;
+            this.toolTip1.SetToolTip(this.button_button, "Открытый обзор");
+            this.button_button.UseVisualStyleBackColor = true;
+            this.button_button.Click += new System.EventHandler(this.button_button_Click);
             // 
             // button36
             // 
@@ -446,26 +411,120 @@
             this.button36.FlatAppearance.BorderSize = 0;
             this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button36.Image = global::WindowsFormsApplication17.Properties.Resources.write_out;
-            this.button36.Location = new System.Drawing.Point(60, 34);
+            this.button36.Location = new System.Drawing.Point(51, 34);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(24, 24);
             this.button36.TabIndex = 32;
             this.toolTip1.SetToolTip(this.button36, "режим редактирования");
             this.button36.UseVisualStyleBackColor = true;
             // 
+            // button37
+            // 
+            this.button37.Enabled = false;
+            this.button37.FlatAppearance.BorderSize = 0;
+            this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button37.Image = global::WindowsFormsApplication17.Properties.Resources.watch;
+            this.button37.Location = new System.Drawing.Point(21, 34);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(24, 24);
+            this.button37.TabIndex = 31;
+            this.toolTip1.SetToolTip(this.button37, "Открытый обзор");
+            this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
+            // 
+            // button35
+            // 
+            this.button35.Enabled = false;
+            this.button35.FlatAppearance.BorderSize = 0;
+            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button35.Image = global::WindowsFormsApplication17.Properties.Resources.write_out;
+            this.button35.Location = new System.Drawing.Point(51, 34);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(24, 24);
+            this.button35.TabIndex = 30;
+            this.toolTip1.SetToolTip(this.button35, "режим редактирования");
+            this.button35.UseVisualStyleBackColor = true;
+            // 
+            // button34
+            // 
+            this.button34.FlatAppearance.BorderSize = 0;
+            this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button34.Image = global::WindowsFormsApplication17.Properties.Resources.watch;
+            this.button34.Location = new System.Drawing.Point(21, 34);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(24, 24);
+            this.button34.TabIndex = 29;
+            this.toolTip1.SetToolTip(this.button34, "Открытый обзор");
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
+            // 
+            // button38
+            // 
+            this.button38.Enabled = false;
+            this.button38.FlatAppearance.BorderSize = 0;
+            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button38.Image = global::WindowsFormsApplication17.Properties.Resources.write_out;
+            this.button38.Location = new System.Drawing.Point(51, 34);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(24, 24);
+            this.button38.TabIndex = 30;
+            this.toolTip1.SetToolTip(this.button38, "режим редактирования");
+            this.button38.UseVisualStyleBackColor = true;
+            // 
+            // button39
+            // 
+            this.button39.FlatAppearance.BorderSize = 0;
+            this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button39.Image = global::WindowsFormsApplication17.Properties.Resources.watch;
+            this.button39.Location = new System.Drawing.Point(21, 34);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(24, 24);
+            this.button39.TabIndex = 29;
+            this.toolTip1.SetToolTip(this.button39, "Открытый обзор");
+            this.button39.UseVisualStyleBackColor = true;
+            // 
+            // button45
+            // 
+            this.button45.Enabled = false;
+            this.button45.FlatAppearance.BorderSize = 0;
+            this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button45.Image = global::WindowsFormsApplication17.Properties.Resources.write_out;
+            this.button45.Location = new System.Drawing.Point(51, 34);
+            this.button45.Name = "button45";
+            this.button45.Size = new System.Drawing.Size(24, 24);
+            this.button45.TabIndex = 32;
+            this.toolTip1.SetToolTip(this.button45, "режим редактирования");
+            this.button45.UseVisualStyleBackColor = true;
+            // 
+            // button46
+            // 
+            this.button46.Enabled = false;
+            this.button46.FlatAppearance.BorderSize = 0;
+            this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button46.Image = global::WindowsFormsApplication17.Properties.Resources.watch;
+            this.button46.Location = new System.Drawing.Point(21, 34);
+            this.button46.Name = "button46";
+            this.button46.Size = new System.Drawing.Size(24, 24);
+            this.button46.TabIndex = 31;
+            this.toolTip1.SetToolTip(this.button46, "Открытый обзор");
+            this.button46.UseVisualStyleBackColor = true;
+            // 
             // MathPage
             // 
             this.MathPage.BackColor = System.Drawing.Color.Silver;
+            this.MathPage.Controls.Add(this.text2);
+            this.MathPage.Controls.Add(this.text1);
+            this.MathPage.Controls.Add(this.prusbutton);
             this.MathPage.Controls.Add(this.button41);
             this.MathPage.Controls.Add(this.textPan);
-            this.MathPage.Controls.Add(this.button38);
-            this.MathPage.Controls.Add(this.button39);
             this.MathPage.Controls.Add(this.label4);
-            this.MathPage.Controls.Add(this.journal3);
             this.MathPage.Controls.Add(this.switcher2);
             this.MathPage.Controls.Add(this.button40);
             this.MathPage.Controls.Add(this.panel3);
+            this.MathPage.Controls.Add(this.button38);
+            this.MathPage.Controls.Add(this.button39);
             this.MathPage.Controls.Add(this.pictureBox5);
+            this.MathPage.Controls.Add(this.journal3);
             this.MathPage.Location = new System.Drawing.Point(4, 22);
             this.MathPage.Name = "MathPage";
             this.MathPage.Padding = new System.Windows.Forms.Padding(3);
@@ -473,48 +532,18 @@
             this.MathPage.TabIndex = 4;
             this.MathPage.Text = "MathPage";
             // 
-            // textPan
-            // 
-            this.textPan.AutoScroll = true;
-            this.textPan.BackColor = System.Drawing.Color.White;
-            this.textPan.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.textPan.Controls.Add(this.button61);
-            this.textPan.Controls.Add(this.text2);
-            this.textPan.Controls.Add(this.text1);
-            this.textPan.Location = new System.Drawing.Point(20, 61);
-            this.textPan.Name = "textPan";
-            this.textPan.Size = new System.Drawing.Size(336, 64);
-            this.textPan.TabIndex = 32;
-            // 
-            // button61
-            // 
-            this.button61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.button61.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button61.FlatAppearance.BorderSize = 2;
-            this.button61.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button61.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button61.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button61.Location = new System.Drawing.Point(135, 1);
-            this.button61.Name = "button61";
-            this.button61.Size = new System.Drawing.Size(59, 56);
-            this.button61.TabIndex = 19;
-            this.button61.Text = "+";
-            this.button61.UseVisualStyleBackColor = false;
-            this.button61.Click += new System.EventHandler(this.button61_Click);
-            // 
             // text2
             // 
             this.text2.BackColor = System.Drawing.Color.Gainsboro;
             this.text2.Font = new System.Drawing.Font("Microsoft Sans Serif", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.text2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.text2.Location = new System.Drawing.Point(199, 1);
+            this.text2.Location = new System.Drawing.Point(221, 64);
             this.text2.Multiline = false;
             this.text2.Name = "text2";
             this.text2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
             this.text2.Size = new System.Drawing.Size(130, 58);
             this.text2.TabIndex = 18;
-            this.text2.Text = "";
+            this.text2.Text = "4253";
             this.text2.Enter += new System.EventHandler(this.text2_Enter);
             this.text2.Leave += new System.EventHandler(this.text2_Leave);
             // 
@@ -523,14 +552,73 @@
             this.text1.BackColor = System.Drawing.Color.Gainsboro;
             this.text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.text1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.text1.Location = new System.Drawing.Point(1, 1);
+            this.text1.Location = new System.Drawing.Point(26, 64);
             this.text1.Multiline = false;
             this.text1.Name = "text1";
             this.text1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
             this.text1.Size = new System.Drawing.Size(129, 58);
             this.text1.TabIndex = 17;
-            this.text1.Text = "";
+            this.text1.Text = "525";
             this.text1.Leave += new System.EventHandler(this.text1_Leave);
+            // 
+            // prusbutton
+            // 
+            this.prusbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.prusbutton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.prusbutton.FlatAppearance.BorderSize = 2;
+            this.prusbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.prusbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.prusbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.prusbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.prusbutton.Location = new System.Drawing.Point(158, 65);
+            this.prusbutton.Name = "prusbutton";
+            this.prusbutton.Size = new System.Drawing.Size(59, 56);
+            this.prusbutton.TabIndex = 19;
+            this.prusbutton.Text = "+";
+            this.prusbutton.UseVisualStyleBackColor = false;
+            this.prusbutton.Click += new System.EventHandler(this.button61_Click);
+            // 
+            // textPan
+            // 
+            this.textPan.BackColor = System.Drawing.Color.White;
+            this.textPan.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.textPan.Controls.Add(this.untoodit);
+            this.textPan.Controls.Add(this.toodit);
+            this.textPan.Location = new System.Drawing.Point(20, 61);
+            this.textPan.Name = "textPan";
+            this.textPan.Size = new System.Drawing.Size(336, 65);
+            this.textPan.TabIndex = 32;
+            // 
+            // untoodit
+            // 
+            this.untoodit.BackColor = System.Drawing.Color.Transparent;
+            this.untoodit.BackgroundImage = global::WindowsFormsApplication17.Properties.Resources.оттудыть;
+            this.untoodit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.untoodit.Enabled = false;
+            this.untoodit.Location = new System.Drawing.Point(66, 61);
+            this.untoodit.Name = "untoodit";
+            this.untoodit.Size = new System.Drawing.Size(60, 60);
+            this.untoodit.TabIndex = 38;
+            this.untoodit.TabStop = false;
+            this.untoodit.MouseDown += new System.Windows.Forms.MouseEventHandler(this.untoodit_MouseDown);
+            this.untoodit.MouseEnter += new System.EventHandler(this.untoodit_MouseEnter);
+            this.untoodit.MouseLeave += new System.EventHandler(this.untoodit_MouseLeave);
+            this.untoodit.MouseUp += new System.Windows.Forms.MouseEventHandler(this.untoodit_MouseUp);
+            // 
+            // toodit
+            // 
+            this.toodit.BackColor = System.Drawing.Color.Transparent;
+            this.toodit.BackgroundImage = global::WindowsFormsApplication17.Properties.Resources.тудыть;
+            this.toodit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.toodit.Location = new System.Drawing.Point(1, 61);
+            this.toodit.Name = "toodit";
+            this.toodit.Size = new System.Drawing.Size(60, 60);
+            this.toodit.TabIndex = 37;
+            this.toodit.TabStop = false;
+            this.toodit.MouseDown += new System.Windows.Forms.MouseEventHandler(this.toodit_MouseDown);
+            this.toodit.MouseEnter += new System.EventHandler(this.toodit_MouseEnter);
+            this.toodit.MouseLeave += new System.EventHandler(this.toodit_MouseLeave);
+            this.toodit.MouseUp += new System.Windows.Forms.MouseEventHandler(this.toodit_MouseUp);
             // 
             // label4
             // 
@@ -540,23 +628,6 @@
             this.label4.Size = new System.Drawing.Size(110, 13);
             this.label4.TabIndex = 28;
             this.label4.Text = "Авто просчёт : Выкл";
-            // 
-            // journal3
-            // 
-            this.journal3.BackColor = System.Drawing.Color.DarkGray;
-            this.journal3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.journal3.Location = new System.Drawing.Point(387, 61);
-            this.journal3.Name = "journal3";
-            this.journal3.Size = new System.Drawing.Size(140, 432);
-            this.journal3.TabIndex = 31;
-            // 
-            // switcher2
-            // 
-            this.switcher2.Location = new System.Drawing.Point(407, 3);
-            this.switcher2.Name = "switcher2";
-            this.switcher2.Size = new System.Drawing.Size(41, 23);
-            this.switcher2.TabIndex = 27;
-            this.switcher2.TabStop = false;
             // 
             // button40
             // 
@@ -574,10 +645,6 @@
             this.panel3.Controls.Add(this.button42);
             this.panel3.Controls.Add(this.button43);
             this.panel3.Controls.Add(this.button44);
-            this.panel3.Controls.Add(this.button45);
-            this.panel3.Controls.Add(this.button46);
-            this.panel3.Controls.Add(this.button47);
-            this.panel3.Controls.Add(this.button48);
             this.panel3.Controls.Add(this.button49);
             this.panel3.Controls.Add(this.button50);
             this.panel3.Controls.Add(this.button51);
@@ -588,7 +655,7 @@
             this.panel3.Controls.Add(this.button56);
             this.panel3.Controls.Add(this.button57);
             this.panel3.Controls.Add(this.button58);
-            this.panel3.Location = new System.Drawing.Point(-31, 131);
+            this.panel3.Location = new System.Drawing.Point(-31, 132);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(387, 365);
             this.panel3.TabIndex = 16;
@@ -596,7 +663,7 @@
             // button42
             // 
             this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button42.Location = new System.Drawing.Point(120, 87);
+            this.button42.Location = new System.Drawing.Point(253, 220);
             this.button42.Name = "button42";
             this.button42.Size = new System.Drawing.Size(60, 60);
             this.button42.TabIndex = 22;
@@ -609,7 +676,7 @@
             // button43
             // 
             this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button43.Location = new System.Drawing.Point(55, 87);
+            this.button43.Location = new System.Drawing.Point(253, 154);
             this.button43.Name = "button43";
             this.button43.Size = new System.Drawing.Size(60, 60);
             this.button43.TabIndex = 21;
@@ -631,58 +698,6 @@
             this.button44.UseVisualStyleBackColor = true;
             this.button44.Click += new System.EventHandler(this.buttonMath_Click);
             this.button44.Paint += new System.Windows.Forms.PaintEventHandler(this.ButtonMath_Paint);
-            // 
-            // button45
-            // 
-            this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 38.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button45.Location = new System.Drawing.Point(253, 220);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(129, 60);
-            this.button45.TabIndex = 19;
-            this.button45.Tag = "Controls";
-            this.button45.Text = "*";
-            this.button45.UseVisualStyleBackColor = true;
-            this.button45.Click += new System.EventHandler(this.buttonMath_Click);
-            this.button45.Paint += new System.Windows.Forms.PaintEventHandler(this.ButtonMath_Paint);
-            // 
-            // button46
-            // 
-            this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 38.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button46.Location = new System.Drawing.Point(253, 154);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(129, 60);
-            this.button46.TabIndex = 18;
-            this.button46.Tag = "Controls";
-            this.button46.Text = "/";
-            this.button46.UseVisualStyleBackColor = true;
-            this.button46.Click += new System.EventHandler(this.buttonMath_Click);
-            this.button46.Paint += new System.Windows.Forms.PaintEventHandler(this.ButtonMath_Paint);
-            // 
-            // button47
-            // 
-            this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 38.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button47.Location = new System.Drawing.Point(253, 88);
-            this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(129, 60);
-            this.button47.TabIndex = 17;
-            this.button47.Tag = "Controls";
-            this.button47.Text = "-";
-            this.button47.UseVisualStyleBackColor = true;
-            this.button47.Click += new System.EventHandler(this.buttonMath_Click);
-            this.button47.Paint += new System.Windows.Forms.PaintEventHandler(this.ButtonMath_Paint);
-            // 
-            // button48
-            // 
-            this.button48.Font = new System.Drawing.Font("Microsoft Sans Serif", 38.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button48.Location = new System.Drawing.Point(253, 22);
-            this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(129, 60);
-            this.button48.TabIndex = 16;
-            this.button48.Tag = "Controls";
-            this.button48.Text = "+";
-            this.button48.UseVisualStyleBackColor = true;
-            this.button48.Click += new System.EventHandler(this.buttonMath_Click);
-            this.button48.Paint += new System.Windows.Forms.PaintEventHandler(this.ButtonMath_Paint);
             // 
             // button50
             // 
@@ -893,14 +908,15 @@
             // ParcePage
             // 
             this.ParcePage.BackColor = System.Drawing.Color.Silver;
-            this.ParcePage.Controls.Add(this.button35);
-            this.ParcePage.Controls.Add(this.button34);
+            this.ParcePage.Controls.Add(this.button80);
             this.ParcePage.Controls.Add(this.label_proschet);
             this.ParcePage.Controls.Add(this.switcher1);
             this.ParcePage.Controls.Add(this.textBox2);
             this.ParcePage.Controls.Add(this.button32);
             this.ParcePage.Controls.Add(this.button31);
             this.ParcePage.Controls.Add(this.panel2);
+            this.ParcePage.Controls.Add(this.button35);
+            this.ParcePage.Controls.Add(this.button34);
             this.ParcePage.Controls.Add(this.pictureBox2);
             this.ParcePage.Controls.Add(this.journal2);
             this.ParcePage.Location = new System.Drawing.Point(4, 22);
@@ -910,6 +926,21 @@
             this.ParcePage.TabIndex = 0;
             this.ParcePage.Text = "ParcePage";
             // 
+            // button80
+            // 
+            this.button80.BackColor = System.Drawing.Color.Gray;
+            this.button80.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button80.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.button80.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.button80.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button80.Location = new System.Drawing.Point(24, 482);
+            this.button80.Name = "button80";
+            this.button80.Size = new System.Drawing.Size(327, 10);
+            this.button80.TabIndex = 34;
+            this.button80.Text = "button80";
+            this.button80.UseVisualStyleBackColor = false;
+            this.button80.Click += new System.EventHandler(this.button80_Click);
+            // 
             // label_proschet
             // 
             this.label_proschet.AutoSize = true;
@@ -918,15 +949,6 @@
             this.label_proschet.Size = new System.Drawing.Size(110, 13);
             this.label_proschet.TabIndex = 28;
             this.label_proschet.Text = "Авто просчёт : Выкл";
-            // 
-            // switcher1
-            // 
-            this.switcher1.Location = new System.Drawing.Point(407, 3);
-            this.switcher1.Name = "switcher1";
-            this.switcher1.Size = new System.Drawing.Size(41, 23);
-            this.switcher1.TabIndex = 27;
-            this.switcher1.TabStop = false;
-            this.switcher1.Click += new System.EventHandler(this.switcher1_Click);
             // 
             // textBox2
             // 
@@ -939,6 +961,7 @@
             this.textBox2.Size = new System.Drawing.Size(336, 64);
             this.textBox2.TabIndex = 17;
             this.textBox2.Text = "";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button32
             // 
@@ -1176,18 +1199,11 @@
             this.pictureBox2.TabIndex = 23;
             this.pictureBox2.TabStop = false;
             // 
-            // journal2
-            // 
-            this.journal2.BackColor = System.Drawing.Color.DarkGray;
-            this.journal2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.journal2.Location = new System.Drawing.Point(387, 61);
-            this.journal2.Name = "journal2";
-            this.journal2.Size = new System.Drawing.Size(140, 432);
-            this.journal2.TabIndex = 31;
-            // 
             // CalculatorPage
             // 
             this.CalculatorPage.BackColor = System.Drawing.Color.Silver;
+            this.CalculatorPage.Controls.Add(this.pictureBox8);
+            this.CalculatorPage.Controls.Add(this.button79);
             this.CalculatorPage.Controls.Add(this.button36);
             this.CalculatorPage.Controls.Add(this.button37);
             this.CalculatorPage.Controls.Add(this.journal1);
@@ -1207,14 +1223,20 @@
             this.CalculatorPage.TabIndex = 1;
             this.CalculatorPage.Text = "CalculatorPage";
             // 
-            // journal1
+            // button79
             // 
-            this.journal1.BackColor = System.Drawing.Color.DarkGray;
-            this.journal1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.journal1.Location = new System.Drawing.Point(387, 61);
-            this.journal1.Name = "journal1";
-            this.journal1.Size = new System.Drawing.Size(140, 435);
-            this.journal1.TabIndex = 27;
+            this.button79.BackColor = System.Drawing.Color.Gray;
+            this.button79.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button79.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.button79.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.button79.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button79.Location = new System.Drawing.Point(24, 482);
+            this.button79.Name = "button79";
+            this.button79.Size = new System.Drawing.Size(327, 10);
+            this.button79.TabIndex = 33;
+            this.button79.Text = "button79";
+            this.button79.UseVisualStyleBackColor = false;
+            this.button79.Click += new System.EventHandler(this.button79_Click);
             // 
             // button29
             // 
@@ -1461,7 +1483,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 38.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBox1.Location = new System.Drawing.Point(21, 61);
             this.textBox1.Multiline = false;
@@ -1503,12 +1525,577 @@
             this.tabCon.Controls.Add(this.CalculatorPage);
             this.tabCon.Controls.Add(this.ParcePage);
             this.tabCon.Controls.Add(this.MathPage);
+            this.tabCon.Controls.Add(this.NotePage1);
             this.tabCon.Controls.Add(this.OptionsPage);
             this.tabCon.Location = new System.Drawing.Point(205, 1);
             this.tabCon.Name = "tabCon";
             this.tabCon.SelectedIndex = 1;
             this.tabCon.Size = new System.Drawing.Size(558, 611);
             this.tabCon.TabIndex = 2;
+            this.tabCon.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabCon_Selected);
+            // 
+            // NotePage1
+            // 
+            this.NotePage1.BackColor = System.Drawing.Color.Silver;
+            this.NotePage1.Controls.Add(this.journal4);
+            this.NotePage1.Controls.Add(this.ProLabel);
+            this.NotePage1.Controls.Add(this.label7);
+            this.NotePage1.Controls.Add(this.X2);
+            this.NotePage1.Controls.Add(this.comboBox4);
+            this.NotePage1.Controls.Add(this.comboBox3);
+            this.NotePage1.Controls.Add(this.labelBig1);
+            this.NotePage1.Controls.Add(this.X);
+            this.NotePage1.Controls.Add(this.comboBox2);
+            this.NotePage1.Controls.Add(this.comboBox1);
+            this.NotePage1.Controls.Add(this.button81);
+            this.NotePage1.Controls.Add(this.label5);
+            this.NotePage1.Controls.Add(this.button48);
+            this.NotePage1.Controls.Add(this.panel4);
+            this.NotePage1.Controls.Add(this.textBox4);
+            this.NotePage1.Controls.Add(this.label6);
+            this.NotePage1.Controls.Add(this.button45);
+            this.NotePage1.Controls.Add(this.button46);
+            this.NotePage1.Controls.Add(this.pictureBox6);
+            this.NotePage1.Controls.Add(this.pictureBox7);
+            this.NotePage1.Controls.Add(this.NotePanel);
+            this.NotePage1.Controls.Add(this.trackBar1);
+            this.NotePage1.Location = new System.Drawing.Point(4, 22);
+            this.NotePage1.Name = "NotePage1";
+            this.NotePage1.Padding = new System.Windows.Forms.Padding(3);
+            this.NotePage1.Size = new System.Drawing.Size(550, 585);
+            this.NotePage1.TabIndex = 5;
+            this.NotePage1.Text = "NotePage";
+            // 
+            // ProLabel
+            // 
+            this.ProLabel.AutoSize = true;
+            this.ProLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ProLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ProLabel.Location = new System.Drawing.Point(393, 50);
+            this.ProLabel.Name = "ProLabel";
+            this.ProLabel.Size = new System.Drawing.Size(83, 12);
+            this.ProLabel.TabIndex = 46;
+            this.ProLabel.Text = "МАСШТАБ: 100%";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(216, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(137, 17);
+            this.label7.TabIndex = 44;
+            this.label7.Text = "РАЗМЕР КЛЕТКИ";
+            // 
+            // X2
+            // 
+            this.X2.AutoSize = true;
+            this.X2.Location = new System.Drawing.Point(278, 43);
+            this.X2.Name = "X2";
+            this.X2.Size = new System.Drawing.Size(14, 13);
+            this.X2.TabIndex = 43;
+            this.X2.Text = "X";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "0,5",
+            "0,7",
+            "1",
+            "2"});
+            this.comboBox4.Location = new System.Drawing.Point(293, 37);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(56, 21);
+            this.comboBox4.TabIndex = 42;
+            this.comboBox4.SelectedValueChanged += new System.EventHandler(this.MakeBackGround);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "0,5",
+            "0,7",
+            "1",
+            "2"});
+            this.comboBox3.Location = new System.Drawing.Point(220, 37);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(56, 21);
+            this.comboBox3.TabIndex = 41;
+            // 
+            // labelBig1
+            // 
+            this.labelBig1.AutoSize = true;
+            this.labelBig1.BackColor = System.Drawing.Color.Transparent;
+            this.labelBig1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelBig1.Location = new System.Drawing.Point(82, 9);
+            this.labelBig1.Name = "labelBig1";
+            this.labelBig1.Size = new System.Drawing.Size(127, 17);
+            this.labelBig1.TabIndex = 40;
+            this.labelBig1.Text = "РАЗМЕР ЛИСТА";
+            // 
+            // X
+            // 
+            this.X.AutoSize = true;
+            this.X.Location = new System.Drawing.Point(139, 43);
+            this.X.Name = "X";
+            this.X.Size = new System.Drawing.Size(14, 13);
+            this.X.TabIndex = 39;
+            this.X.Text = "X";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "20",
+            "20,3",
+            "21",
+            "40"});
+            this.comboBox2.Location = new System.Drawing.Point(154, 37);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(56, 21);
+            this.comboBox2.TabIndex = 38;
+            this.comboBox2.SelectedValueChanged += new System.EventHandler(this.ChangeLists);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "14,7",
+            "16,5",
+            "17",
+            "33"});
+            this.comboBox1.Location = new System.Drawing.Point(81, 37);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(56, 21);
+            this.comboBox1.TabIndex = 37;
+            // 
+            // button81
+            // 
+            this.button81.BackColor = System.Drawing.Color.Gray;
+            this.button81.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button81.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.button81.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.button81.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button81.Location = new System.Drawing.Point(25, 482);
+            this.button81.Name = "button81";
+            this.button81.Size = new System.Drawing.Size(327, 10);
+            this.button81.TabIndex = 35;
+            this.button81.Text = "button81";
+            this.button81.UseVisualStyleBackColor = false;
+            this.button81.Click += new System.EventHandler(this.button81_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(156, 45);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 13);
+            this.label5.TabIndex = 22;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.button62);
+            this.panel4.Controls.Add(this.button63);
+            this.panel4.Controls.Add(this.button64);
+            this.panel4.Controls.Add(this.button65);
+            this.panel4.Controls.Add(this.button66);
+            this.panel4.Controls.Add(this.button67);
+            this.panel4.Controls.Add(this.button68);
+            this.panel4.Controls.Add(this.button70);
+            this.panel4.Controls.Add(this.button71);
+            this.panel4.Controls.Add(this.button72);
+            this.panel4.Controls.Add(this.button73);
+            this.panel4.Controls.Add(this.button74);
+            this.panel4.Controls.Add(this.button75);
+            this.panel4.Controls.Add(this.button76);
+            this.panel4.Controls.Add(this.button77);
+            this.panel4.Controls.Add(this.button78);
+            this.panel4.Location = new System.Drawing.Point(-31, 476);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(387, 20);
+            this.panel4.TabIndex = 15;
+            // 
+            // button62
+            // 
+            this.button62.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button62.Location = new System.Drawing.Point(56, 220);
+            this.button62.Name = "button62";
+            this.button62.Size = new System.Drawing.Size(60, 60);
+            this.button62.TabIndex = 22;
+            this.button62.Tag = "Controls";
+            this.button62.Text = "(";
+            this.button62.UseVisualStyleBackColor = true;
+            this.button62.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // button63
+            // 
+            this.button63.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button63.Location = new System.Drawing.Point(187, 220);
+            this.button63.Name = "button63";
+            this.button63.Size = new System.Drawing.Size(60, 60);
+            this.button63.TabIndex = 21;
+            this.button63.Tag = "Controls";
+            this.button63.Text = ")";
+            this.button63.UseVisualStyleBackColor = true;
+            this.button63.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // button64
+            // 
+            this.button64.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button64.Location = new System.Drawing.Point(120, 220);
+            this.button64.Name = "button64";
+            this.button64.Size = new System.Drawing.Size(60, 60);
+            this.button64.TabIndex = 20;
+            this.button64.Tag = "Controls";
+            this.button64.Text = ",";
+            this.button64.UseVisualStyleBackColor = true;
+            this.button64.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // button65
+            // 
+            this.button65.Font = new System.Drawing.Font("Microsoft Sans Serif", 38.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button65.Location = new System.Drawing.Point(253, 220);
+            this.button65.Name = "button65";
+            this.button65.Size = new System.Drawing.Size(129, 60);
+            this.button65.TabIndex = 19;
+            this.button65.Tag = "Controls";
+            this.button65.Text = "*";
+            this.button65.UseVisualStyleBackColor = true;
+            this.button65.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // button66
+            // 
+            this.button66.Font = new System.Drawing.Font("Microsoft Sans Serif", 38.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button66.Location = new System.Drawing.Point(253, 154);
+            this.button66.Name = "button66";
+            this.button66.Size = new System.Drawing.Size(129, 60);
+            this.button66.TabIndex = 18;
+            this.button66.Tag = "Controls";
+            this.button66.Text = "/";
+            this.button66.UseVisualStyleBackColor = true;
+            this.button66.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // button67
+            // 
+            this.button67.Font = new System.Drawing.Font("Microsoft Sans Serif", 38.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button67.Location = new System.Drawing.Point(253, 88);
+            this.button67.Name = "button67";
+            this.button67.Size = new System.Drawing.Size(129, 60);
+            this.button67.TabIndex = 17;
+            this.button67.Tag = "Controls";
+            this.button67.Text = "-";
+            this.button67.UseVisualStyleBackColor = true;
+            this.button67.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // button68
+            // 
+            this.button68.Font = new System.Drawing.Font("Microsoft Sans Serif", 38.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button68.Location = new System.Drawing.Point(253, 22);
+            this.button68.Name = "button68";
+            this.button68.Size = new System.Drawing.Size(129, 60);
+            this.button68.TabIndex = 16;
+            this.button68.Tag = "Controls";
+            this.button68.Text = "+";
+            this.button68.UseVisualStyleBackColor = true;
+            this.button68.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // button70
+            // 
+            this.button70.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button70.Location = new System.Drawing.Point(54, 84);
+            this.button70.Name = "button70";
+            this.button70.Size = new System.Drawing.Size(60, 60);
+            this.button70.TabIndex = 9;
+            this.button70.Tag = "Controls";
+            this.button70.Text = "4";
+            this.button70.UseVisualStyleBackColor = true;
+            this.button70.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // button71
+            // 
+            this.button71.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button71.Location = new System.Drawing.Point(186, 150);
+            this.button71.Name = "button71";
+            this.button71.Size = new System.Drawing.Size(60, 60);
+            this.button71.TabIndex = 14;
+            this.button71.Tag = "Controls";
+            this.button71.Text = "9";
+            this.button71.UseVisualStyleBackColor = true;
+            this.button71.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // button72
+            // 
+            this.button72.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button72.Location = new System.Drawing.Point(54, 18);
+            this.button72.Name = "button72";
+            this.button72.Size = new System.Drawing.Size(60, 60);
+            this.button72.TabIndex = 6;
+            this.button72.Tag = "Controls";
+            this.button72.Text = "1";
+            this.button72.UseVisualStyleBackColor = true;
+            this.button72.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // button73
+            // 
+            this.button73.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button73.Location = new System.Drawing.Point(120, 150);
+            this.button73.Name = "button73";
+            this.button73.Size = new System.Drawing.Size(60, 60);
+            this.button73.TabIndex = 13;
+            this.button73.Tag = "Controls";
+            this.button73.Text = "8";
+            this.button73.UseVisualStyleBackColor = true;
+            this.button73.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // button74
+            // 
+            this.button74.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button74.Location = new System.Drawing.Point(120, 18);
+            this.button74.Name = "button74";
+            this.button74.Size = new System.Drawing.Size(60, 60);
+            this.button74.TabIndex = 7;
+            this.button74.Tag = "Controls";
+            this.button74.Text = "2";
+            this.button74.UseVisualStyleBackColor = true;
+            this.button74.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // button75
+            // 
+            this.button75.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button75.Location = new System.Drawing.Point(54, 150);
+            this.button75.Name = "button75";
+            this.button75.Size = new System.Drawing.Size(60, 60);
+            this.button75.TabIndex = 12;
+            this.button75.Tag = "Controls";
+            this.button75.Text = "7";
+            this.button75.UseVisualStyleBackColor = true;
+            this.button75.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // button76
+            // 
+            this.button76.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button76.Location = new System.Drawing.Point(186, 18);
+            this.button76.Name = "button76";
+            this.button76.Size = new System.Drawing.Size(60, 60);
+            this.button76.TabIndex = 8;
+            this.button76.Tag = "Controls";
+            this.button76.Text = "3";
+            this.button76.UseVisualStyleBackColor = true;
+            this.button76.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // button77
+            // 
+            this.button77.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button77.Location = new System.Drawing.Point(186, 84);
+            this.button77.Name = "button77";
+            this.button77.Size = new System.Drawing.Size(60, 60);
+            this.button77.TabIndex = 11;
+            this.button77.Tag = "Controls";
+            this.button77.Text = "6";
+            this.button77.UseVisualStyleBackColor = true;
+            this.button77.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // button78
+            // 
+            this.button78.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button78.Location = new System.Drawing.Point(120, 84);
+            this.button78.Name = "button78";
+            this.button78.Size = new System.Drawing.Size(60, 60);
+            this.button78.TabIndex = 10;
+            this.button78.Tag = "Controls";
+            this.button78.Text = "5";
+            this.button78.UseVisualStyleBackColor = true;
+            this.button78.Click += new System.EventHandler(this.button_Notes_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox4.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.textBox4.Location = new System.Drawing.Point(21, 61);
+            this.textBox4.Multiline = false;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox4.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
+            this.textBox4.Size = new System.Drawing.Size(335, 27);
+            this.textBox4.TabIndex = 5;
+            this.textBox4.Text = "";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Yellow;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(20, 120);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 20);
+            this.label6.TabIndex = 4;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox6.Location = new System.Drawing.Point(-40, 29);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(584, 1);
+            this.pictureBox6.TabIndex = 24;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Silver;
+            this.pictureBox7.Image = global::WindowsFormsApplication17.Properties.Resources.tabel;
+            this.pictureBox7.Location = new System.Drawing.Point(-7, 77);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(20, 376);
+            this.pictureBox7.TabIndex = 26;
+            this.pictureBox7.TabStop = false;
+            // 
+            // NotePanel
+            // 
+            this.NotePanel.AutoScroll = true;
+            this.NotePanel.BackColor = System.Drawing.Color.Gray;
+            this.NotePanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.NotePanel.Location = new System.Drawing.Point(20, 94);
+            this.NotePanel.Name = "NotePanel";
+            this.NotePanel.Size = new System.Drawing.Size(337, 382);
+            this.NotePanel.TabIndex = 36;
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.LargeChange = 1;
+            this.trackBar1.Location = new System.Drawing.Point(387, 32);
+            this.trackBar1.Maximum = 3;
+            this.trackBar1.Minimum = -3;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(140, 45);
+            this.trackBar1.TabIndex = 45;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // NotePage
+            // 
+            this.NotePage.BackColor = System.Drawing.Color.Silver;
+            this.NotePage.BackgroundImage = global::WindowsFormsApplication17.Properties.Resources.BackImage;
+            this.NotePage.Controls.Add(this.advancedButton4);
+            this.NotePage.Controls.Add(this.advancedButton3);
+            this.NotePage.Controls.Add(this.advancedButton2);
+            this.NotePage.Controls.Add(this.advancedButton1);
+            this.NotePage.Location = new System.Drawing.Point(-271, 0);
+            this.NotePage.Name = "NotePage";
+            this.NotePage.Size = new System.Drawing.Size(500, 517);
+            this.NotePage.TabIndex = 1;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox8.Location = new System.Drawing.Point(159, 94);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(193, 306);
+            this.pictureBox8.TabIndex = 34;
+            this.pictureBox8.TabStop = false;
+            // 
+            // advancedButton4
+            // 
+            this.advancedButton4.BackColor = System.Drawing.Color.Transparent;
+            this.advancedButton4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("advancedButton4.BackgroundImage")));
+            this.advancedButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.advancedButton4.Location = new System.Drawing.Point(272, 188);
+            this.advancedButton4.Name = "advancedButton4";
+            this.advancedButton4.Size = new System.Drawing.Size(168, 45);
+            this.advancedButton4.TabIndex = 3;
+            this.advancedButton4.Tag = "      ТЕТРАДЬ";
+            // 
+            // advancedButton3
+            // 
+            this.advancedButton3.BackColor = System.Drawing.Color.Transparent;
+            this.advancedButton3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("advancedButton3.BackgroundImage")));
+            this.advancedButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.advancedButton3.Location = new System.Drawing.Point(283, 134);
+            this.advancedButton3.Name = "advancedButton3";
+            this.advancedButton3.Size = new System.Drawing.Size(168, 45);
+            this.advancedButton3.TabIndex = 2;
+            this.advancedButton3.Tag = "   (НЕ РАБОТАЕТ!)";
+            // 
+            // advancedButton2
+            // 
+            this.advancedButton2.BackColor = System.Drawing.Color.Transparent;
+            this.advancedButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("advancedButton2.BackgroundImage")));
+            this.advancedButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.advancedButton2.Location = new System.Drawing.Point(294, 80);
+            this.advancedButton2.Name = "advancedButton2";
+            this.advancedButton2.Size = new System.Drawing.Size(168, 45);
+            this.advancedButton2.TabIndex = 1;
+            this.advancedButton2.Tag = "        СКОБКИ";
+            // 
+            // advancedButton1
+            // 
+            this.advancedButton1.BackColor = System.Drawing.Color.Transparent;
+            this.advancedButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("advancedButton1.BackgroundImage")));
+            this.advancedButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.advancedButton1.Location = new System.Drawing.Point(306, 26);
+            this.advancedButton1.Name = "advancedButton1";
+            this.advancedButton1.Size = new System.Drawing.Size(168, 44);
+            this.advancedButton1.TabIndex = 0;
+            this.advancedButton1.Tag = "   КАЛЬКУЛЯТОР";
+            // 
+            // journal1
+            // 
+            this.journal1.BackColor = System.Drawing.Color.DarkGray;
+            this.journal1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.journal1.Location = new System.Drawing.Point(387, 61);
+            this.journal1.Name = "journal1";
+            this.journal1.Size = new System.Drawing.Size(140, 435);
+            this.journal1.TabIndex = 27;
+            // 
+            // switcher1
+            // 
+            this.switcher1.Location = new System.Drawing.Point(407, 3);
+            this.switcher1.Name = "switcher1";
+            this.switcher1.Size = new System.Drawing.Size(41, 23);
+            this.switcher1.TabIndex = 27;
+            this.switcher1.TabStop = false;
+            this.switcher1.Click += new System.EventHandler(this.switcher1_Click);
+            // 
+            // journal2
+            // 
+            this.journal2.BackColor = System.Drawing.Color.DarkGray;
+            this.journal2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.journal2.Location = new System.Drawing.Point(387, 61);
+            this.journal2.Name = "journal2";
+            this.journal2.Size = new System.Drawing.Size(140, 435);
+            this.journal2.TabIndex = 31;
+            // 
+            // switcher2
+            // 
+            this.switcher2.Location = new System.Drawing.Point(407, 3);
+            this.switcher2.Name = "switcher2";
+            this.switcher2.Size = new System.Drawing.Size(41, 23);
+            this.switcher2.TabIndex = 27;
+            this.switcher2.TabStop = false;
+            // 
+            // journal3
+            // 
+            this.journal3.BackColor = System.Drawing.Color.DarkGray;
+            this.journal3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.journal3.Location = new System.Drawing.Point(387, 61);
+            this.journal3.Name = "journal3";
+            this.journal3.Size = new System.Drawing.Size(140, 432);
+            this.journal3.TabIndex = 31;
+            // 
+            // journal4
+            // 
+            this.journal4.BackColor = System.Drawing.Color.DarkGray;
+            this.journal4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.journal4.Location = new System.Drawing.Point(387, 61);
+            this.journal4.Name = "journal4";
+            this.journal4.Size = new System.Drawing.Size(140, 435);
+            this.journal4.TabIndex = 27;
             // 
             // tools1
             // 
@@ -1523,17 +2110,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(739, 516);
-            this.Controls.Add(this.tabPanel);
+            this.Controls.Add(this.button_button);
+            this.Controls.Add(this.NotePage);
             this.Controls.Add(this.tabCon);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Tag = "MainForm";
+            this.Text = "Автошкольник 0.0.1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Move += new System.EventHandler(this.Form1_Move);
             this.contextMenuStrip1.ResumeLayout(false);
-            this.tabPanel.ResumeLayout(false);
             this.MathPage.ResumeLayout(false);
             this.MathPage.PerformLayout();
             this.textPan.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.switcher2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.untoodit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toodit)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.OptionsPage.ResumeLayout(false);
@@ -1541,7 +2133,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ParcePage.ResumeLayout(false);
             this.ParcePage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.switcher1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.CalculatorPage.ResumeLayout(false);
@@ -1550,13 +2141,23 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.tabCon.ResumeLayout(false);
+            this.NotePage1.ResumeLayout(false);
+            this.NotePage1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            this.NotePage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.switcher1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.switcher2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel tabPanel;
+        private System.Windows.Forms.Panel NotePage;
         private WindowsFormsApplication17.AdvancedButton advancedButton1;
         private WindowsFormsApplication17.AdvancedButton advancedButton2;
         private System.Windows.Forms.Timer ExceptionTimer;
@@ -1568,7 +2169,6 @@
         private System.Windows.Forms.ToolStripMenuItem удалитьToolStripMenuItem;
         private WindowsFormsApplication17.ToolBox tools1;
         private System.Windows.Forms.ToolTip toolTip1;
-        private AdvancedButton advancedButton3;
         private System.Windows.Forms.TabPage MathPage;
         private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button button39;
@@ -1582,10 +2182,6 @@
         private System.Windows.Forms.Button button42;
         private System.Windows.Forms.Button button43;
         private System.Windows.Forms.Button button44;
-        private System.Windows.Forms.Button button45;
-        private System.Windows.Forms.Button button46;
-        private System.Windows.Forms.Button button47;
-        private System.Windows.Forms.Button button48;
         private System.Windows.Forms.Button button49;
         private System.Windows.Forms.Button button50;
         private System.Windows.Forms.Button button51;
@@ -1663,8 +2259,55 @@
         private System.Windows.Forms.Button button60;
         private System.Windows.Forms.Button button59;
         private System.Windows.Forms.Panel textPan;
-        private System.Windows.Forms.Button button61;
+        private System.Windows.Forms.Button prusbutton;
         private System.Windows.Forms.RichTextBox text2;
+        private System.Windows.Forms.PictureBox untoodit;
+        private System.Windows.Forms.PictureBox toodit;
+        private AdvancedButton advancedButton4;
+        private AdvancedButton advancedButton3;
+        private System.Windows.Forms.TabPage NotePage1;
+        private System.Windows.Forms.Button button45;
+        private System.Windows.Forms.Button button46;
+        private Journal journal4;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button48;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button62;
+        private System.Windows.Forms.Button button63;
+        private System.Windows.Forms.Button button64;
+        private System.Windows.Forms.Button button65;
+        private System.Windows.Forms.Button button66;
+        private System.Windows.Forms.Button button67;
+        private System.Windows.Forms.Button button68;
+        private System.Windows.Forms.Button button70;
+        private System.Windows.Forms.Button button71;
+        private System.Windows.Forms.Button button72;
+        private System.Windows.Forms.Button button73;
+        private System.Windows.Forms.Button button74;
+        private System.Windows.Forms.Button button75;
+        private System.Windows.Forms.Button button76;
+        private System.Windows.Forms.Button button77;
+        private System.Windows.Forms.Button button78;
+        private System.Windows.Forms.RichTextBox textBox4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Button button79;
+        private System.Windows.Forms.Button button80;
+        private System.Windows.Forms.Button button81;
+        private System.Windows.Forms.Button button_button;
+        private System.Windows.Forms.Panel NotePanel;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label labelBig1;
+        private System.Windows.Forms.Label X;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label X2;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Label ProLabel;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }
 

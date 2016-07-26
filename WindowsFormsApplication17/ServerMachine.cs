@@ -10,9 +10,11 @@ namespace WindowsFormsApplication17
     static class ServerMachine
     {
         public static string primer;
-        public static string transtab;
         public static string type;
         public static MethodInvoker MethodToMath;
-
+        public static TabPage ActivePage;
+        public static string pressed = "";
+        public static Button button_button;
+        public static MethodInvoker Invalidate;
     }
 }
