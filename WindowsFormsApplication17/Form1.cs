@@ -154,7 +154,8 @@ namespace WindowsFormsApplication17
         }
         public void button_button_Click(object sender, EventArgs e)
         {
-            pictureBox8.BackgroundImage = Calculator.Count_Paint(12, '*', 589);
+            pictureBox8.BackgroundImage = Calculator.Count_Paint(8058m, '/',4m);
+            textBox2.Text = Calculator.Find_Period(3m, 101m, 1);
             if (!btf.Visible)
             {
                 btf.Show();
@@ -177,7 +178,7 @@ namespace WindowsFormsApplication17
         Resume check;
         Color StColor = Color.Silver;
         Color NdColor = Color.FromArgb(255, 128, 0);
-        double[] GrayMass = new double[3] { 191, 191, 191 };
+        Decimal[] GrayMass = new Decimal[3] { 191, 191, 191 };
         string DataString;
         bool isWorked = false;
         DataTable dt = new DataTable();
@@ -407,7 +408,7 @@ namespace WindowsFormsApplication17
         {
             try
             {
-                //textBox2.Text = Calculator.Compute(textBox2.Text, 'x', (double)dt.Compute(PolishBox.SelectedItem.ToString(), string.Empty)).ToString();
+                //textBox2.Text = Calculator.Compute(textBox2.Text, 'x', (Decimal)dt.Compute(PolishBox.SelectedItem.ToString(), string.Empty)).ToString();
                 Calculator.Begin();
                 journal2.AddResume(textBox2.Text);
                 textBox2.Text = textBox2.Text.Replace(',', '.');
@@ -450,7 +451,7 @@ namespace WindowsFormsApplication17
         {
             StColor = Color.Silver;
             NdColor = Color.FromArgb(255, 128, 0);
-            GrayMass = new double[3] { 191, 191, 191 };
+            GrayMass = new Decimal[3] { 191, 191, 191 };
             pictureBox4.Tag = "open";
         }
 
@@ -458,7 +459,7 @@ namespace WindowsFormsApplication17
         {
             StColor = Color.FromArgb(255, 128, 0);
             NdColor = Color.Silver;
-            GrayMass = new double[3] { 255, 128, 0 };
+            GrayMass = new Decimal[3] { 255, 128, 0 };
         }
 
         private void button28_Click_1(object sender, EventArgs e)
@@ -583,7 +584,7 @@ namespace WindowsFormsApplication17
                 }
                 //
                 string answer = "___";
-                string real_answer = (Convert.ToDouble(st) + Convert.ToDouble(nd)).ToString();
+                string real_answer = (Convert.ToDecimal(st) + Convert.ToDecimal(nd)).ToString();
                 int rdLength = Calculator.Find(real_answer, ',');
                 while (real_answer.Length - (rdLength == -1 ? real_answer.Length : rdLength) < nd.Length - (ndLength == -1 ? nd.Length : ndLength))
                 {
@@ -697,7 +698,7 @@ namespace WindowsFormsApplication17
                 bath += 50;
                 nully += "0";
             }
-            string real_answer = (Convert.ToDouble(st) * Convert.ToDouble(nd)).ToString();
+            string real_answer = (Convert.ToDecimal(st) * Convert.ToDecimal(nd)).ToString();
             int rdLength = Calculator.Find(real_answer, ',');
             while (real_answer.Length - (rdLength == -1 ? real_answer.Length : rdLength) < nd.Length - (ndLength == -1 ? nd.Length : ndLength))
             {
@@ -821,7 +822,7 @@ namespace WindowsFormsApplication17
             }
             //
             string answer = "___";
-            string real_answer = (Convert.ToDouble(st) - Convert.ToDouble(nd)).ToString();
+            string real_answer = (Convert.ToDecimal(st) - Convert.ToDecimal(nd)).ToString();
             int rdLength = Calculator.Find(real_answer, ',');
             while (real_answer.Length - (rdLength == -1 ? real_answer.Length : rdLength) < nd.Length - (ndLength == -1 ? nd.Length : ndLength))
             {
@@ -1199,7 +1200,7 @@ namespace WindowsFormsApplication17
         {
             Panel p = new Panel();
             p.Location = Location;
-            p.Size = new Size(Convert.ToInt16((Convert.ToDouble(comboBox1.Text) / (0.026458333333339 / Count_Scale))), Convert.ToInt16((Convert.ToDouble(comboBox2.Text) / (0.026458333333339 / Count_Scale))));
+            p.Size = new Size(Convert.ToInt16((Convert.ToDecimal(comboBox1.Text) / (0.026458333333339m / Count_Scale))), Convert.ToInt16((Convert.ToDecimal(comboBox2.Text) / (0.026458333333339m / Count_Scale))));
             p.BackColor = Color.White;
             PictureBox pp = new PictureBox();
             pp.Parent = p;
@@ -1216,13 +1217,13 @@ namespace WindowsFormsApplication17
         {
             foreach (Panel p in Lists)
             {
-                p.Size = new Size(Convert.ToInt16((Convert.ToDouble(comboBox1.Text) / (0.026458333333339 / Count_Scale))), Convert.ToInt16((Convert.ToDouble(comboBox2.Text) / (0.026458333333339 / Count_Scale))));
+                p.Size = new Size(Convert.ToInt16((Convert.ToDecimal(comboBox1.Text) / (0.026458333333339m / Count_Scale))), Convert.ToInt16((Convert.ToDecimal(comboBox2.Text) / (0.026458333333339m / Count_Scale))));
                 p.Controls[0].Size = p.Size;
             }
         }
         private void MakeBackGround(object sender, EventArgs e)
         {
-            Bitmap bmp = new Bitmap(Convert.ToInt16((Convert.ToDouble(comboBox3.Text) / (0.026458333333339 / Count_Scale))), Convert.ToInt16((Convert.ToDouble(comboBox4.Text) / (0.026458333333339 / Count_Scale))));
+            Bitmap bmp = new Bitmap(Convert.ToInt16((Convert.ToDecimal(comboBox3.Text) / (0.026458333333339m / Count_Scale))), Convert.ToInt16((Convert.ToDecimal(comboBox4.Text) / (0.026458333333339m / Count_Scale))));
             Graphics gr = Graphics.FromImage(bmp);
             gr.DrawLine(new Pen(new SolidBrush(Color.FromArgb(126, 0, 34, 254)), 1), bmp.Width / 2, 0, bmp.Width / 2, bmp.Height - 1);
             gr.DrawLine(new Pen(new SolidBrush(Color.FromArgb(126, 0, 34, 254)), 1), 0, bmp.Height / 2, bmp.Width - 1, bmp.Height / 2);
@@ -1271,14 +1272,14 @@ namespace WindowsFormsApplication17
             }
             beforeLoc = this.Location;
         }
-        private double Count_Scale
+        private Decimal Count_Scale
         {
             get
             {
                 if (trackBar1.Value >= 0)
                     return trackBar1.Value + 1;
                 else
-                    return 1.0 / (-trackBar1.Value + 1);
+                    return 1.0m / (-trackBar1.Value + 1);
             }
         }
         private void trackBar1_Scroll(object sender, EventArgs e)

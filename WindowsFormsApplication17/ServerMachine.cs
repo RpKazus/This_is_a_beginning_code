@@ -16,5 +16,6 @@ namespace WindowsFormsApplication17
         public static string pressed = "";
         public static Button button_button;
         public static MethodInvoker Invalidate;
+        public static int usage = 8;
     }
 }

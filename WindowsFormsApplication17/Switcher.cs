@@ -20,9 +20,9 @@ namespace WindowsFormsApplication17
         Color GoldColor = Color.FromArgb(255, 128, 0);
         public Label LinkLabel;
         public Timer timer = new Timer();
-        double xloc;
-        double[] GrayMass;
-        double[] GoldMass;
+        Decimal xloc;
+        Decimal[] GrayMass;
+        Decimal[] GoldMass;
         Color StColor;
         Color NdColor;
         public Switcher()
@@ -43,7 +43,7 @@ namespace WindowsFormsApplication17
             switcher = new Point(this.Size.Height / 2 + con, this.Size.Height / 2 + con);
             Drawing(this.CreateGraphics());
         }
-        public static bool Compare(double item1, double item2, double result)
+        public static bool Compare(Decimal item1, Decimal item2, Decimal result)
         {
             if (item2 > 0)
                 return item1 + item2 < result;
@@ -74,7 +74,7 @@ namespace WindowsFormsApplication17
                 NdColor = SaveColor;
             }
         }
-        public static double CountPath(double path, double time)
+        public static Decimal CountPath(Decimal path, Decimal time)
         {
             return path / time;
         }
@@ -109,8 +109,8 @@ namespace WindowsFormsApplication17
             }
             StColor = GrayColor;
             NdColor = GoldColor;
-            GrayMass = new double[3] { StColor.R, StColor.G, StColor.B };
-            GoldMass = new double[3] { NdColor.R, NdColor.G, NdColor.B };
+            GrayMass = new Decimal[3] { StColor.R, StColor.G, StColor.B };
+            GoldMass = new Decimal[3] { NdColor.R, NdColor.G, NdColor.B };
             xloc = switcher.X;
         }
         void Switcher_Paint(object sender, PaintEventArgs e)

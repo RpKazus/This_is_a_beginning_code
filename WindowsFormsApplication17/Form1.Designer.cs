@@ -1993,10 +1993,11 @@
             // 
             // pictureBox8
             // 
+            this.pictureBox8.BackColor = System.Drawing.Color.White;
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox8.Location = new System.Drawing.Point(159, 94);
+            this.pictureBox8.Location = new System.Drawing.Point(114, -11);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(193, 306);
+            this.pictureBox8.Size = new System.Drawing.Size(361, 503);
             this.pictureBox8.TabIndex = 34;
             this.pictureBox8.TabStop = false;
             // 
