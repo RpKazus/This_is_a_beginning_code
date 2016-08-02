@@ -154,7 +154,7 @@ namespace WindowsFormsApplication17
         }
         public void button_button_Click(object sender, EventArgs e)
         {
-            pictureBox8.BackgroundImage = Calculator.Count_Paint(8058m, '/',4m);
+            pictureBox8.BackgroundImage = Calculator.Count_Paint(720.25m, '+',8.578m);
             textBox2.Text = Calculator.Find_Period(3m, 101m, 1);
             if (!btf.Visible)
             {
