@@ -17,5 +17,6 @@ namespace WindowsFormsApplication17
         public static Button button_button;
         public static MethodInvoker Invalidate;
         public static int usage = 0;
+        public static PictureBox senPic = null;
     }
 }

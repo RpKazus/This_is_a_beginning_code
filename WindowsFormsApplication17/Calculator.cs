@@ -44,6 +44,20 @@ namespace WindowsFormsApplication17
         }
         public static Image Count_Paint(Decimal st, char val, Decimal nd)
         {
+            int minus = 1;
+            int minus2 = 1;
+            Decimal ra = st * nd;
+            if (val == '/' || val == '*')
+            {
+                if (st > 0 && nd < 0)
+                    minus = -1;
+                else if (st < 0 && nd > 0)
+                    minus2 = -1;
+                if (st < 0)
+                    st *= -1;
+                if (nd < 0)
+                    nd *= -1;
+            }
             List<Point> points = new List<Point>();
             List<int> poinList = new List<int>();
             string strSt = st.ToString();
@@ -76,9 +90,6 @@ namespace WindowsFormsApplication17
                 poinList.Add(0);
             Font std = new Font("", scale * 35);
             Bitmap bmp = new Bitmap(100, 100);
-            int moveCheck = -1;
-            if (Find_Period(st, nd, 1) != "")
-                moveCheck = Convert.ToInt16(Find_Period(st, nd, 2)) + Find_Period(st, nd, 1).Length / 2;
             switch (val)
             {
                 #region plussing
@@ -92,6 +103,7 @@ namespace WindowsFormsApplication17
                         int bmp_Height = 180;
                         int bmp_Width = Lenght(answer.ToString(), new Font("", std.Size / scale)) + 30;
                         gr.DrawString(strSt, std, new SolidBrush(Color.Black), new Point((bmp_Width - 20 - (Stpointpos != -1 ? 10 : 0) - strSt.Length * 25) * scale, 10 * scale));
+                        gr.DrawString("+", std, new SolidBrush(Color.Black), new Point(-5 * scale, 35 * scale));
                         gr.DrawString(strNd, std, new SolidBrush(Color.Black), new Point((bmp_Width - 20 - (Ndpointpos != -1 ? 10 : 0) - strNd.Length * 25) * scale, 60 * scale));
                         gr.DrawLine(new Pen(new SolidBrush(Color.Black), scale), 10 * scale, 115 * scale, (bmp_Width - 10) * scale, 115 * scale);
                         gr.DrawString(answer.ToString(), std, new SolidBrush(Color.Black), new Point(10 * scale, 120 * scale));
@@ -101,7 +113,7 @@ namespace WindowsFormsApplication17
                         Array.Reverse(ndChars = strNd.ToCharArray());
                         int i = 0;
                         int[] ints = new int[stChars.Length >= ndChars.Length ? stChars.Length - Convert.ToInt16(Stpointpos != -1) : ndChars.Length - Convert.ToInt16(Stpointpos != -1)];
-                        for(int loc = bmp_Width - 84; loc > 10; loc -= 25)
+                        for(int loc = bmp_Width - 77; loc > 10; loc -= 25)
                         {
                             if (stChars[i] == ',')
                                 continue;
@@ -122,14 +134,45 @@ namespace WindowsFormsApplication17
                 #region minussing
                 case '-':
                     {
-
+                        Decimal answer = st - nd;
+                        bmp = new Bitmap(Lenght(answer.ToString(), std) + 30 * scale, 180 * scale);
+                        Graphics gr = Graphics.FromImage(bmp);
+                        gr.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                        int bmp_Height = 180;
+                        int bmp_Width = Lenght(answer.ToString(), new Font("", std.Size / scale)) + 30;
+                        gr.DrawString(strSt, std, new SolidBrush(Color.Black), new Point((bmp_Width - 20 - (Stpointpos != -1 ? 10 : 0) - strSt.Length * 25) * scale, 10 * scale));
+                        gr.DrawString("-", std, new SolidBrush(Color.Black), new Point(-5 * scale, 35 * scale));
+                        gr.DrawString(strNd, std, new SolidBrush(Color.Black), new Point((bmp_Width - 20 - (Ndpointpos != -1 ? 10 : 0) - strNd.Length * 25) * scale, 60 * scale));
+                        gr.DrawLine(new Pen(new SolidBrush(Color.Black), scale), 10 * scale, 115 * scale, (bmp_Width - 10) * scale, 115 * scale);
+                        gr.DrawString(answer.ToString(), std, new SolidBrush(Color.Black), new Point(10 * scale, 120 * scale));
+                        char[] stChars;
+                        Array.Reverse(stChars = strSt.ToCharArray());
+                        char[] ndChars;
+                        Array.Reverse(ndChars = strNd.ToCharArray());
+                        int i = 0;
+                        int[] ints = new int[stChars.Length >= ndChars.Length ? stChars.Length - Convert.ToInt16(Stpointpos != -1) : ndChars.Length - Convert.ToInt16(Stpointpos != -1)];
+                        for (int loc = bmp_Width - 77; loc > 10; loc -= 25)
+                        {
+                            if (stChars[i] == ',')
+                                continue;
+                            if (i >= ints.Length)
+                                break;
+                            int first = Convert.ToInt16(stChars[i].ToString());
+                            int second = Convert.ToInt16(ndChars[i].ToString());
+                            if (((stChars.Length > i ? first : 0) - (ndChars.Length > i ? second : 0 + ints[i])) < 0)
+                            {
+                                gr.DrawString("•", new Font("", 12 * scale), new SolidBrush(Color.Black), new PointF(loc * scale, scale));
+                                ints[i] = 1;
+                            }
+                            i++;
+                        }
                     }
                     break;
                 #endregion
                 #region mnossing
                 case '*':
                     {
-                        Decimal answer = st * nd;
+                        Decimal answer = ra;
                         int an_len = answer.ToString().Length;
                         strSt = strSt.Replace(",", "");
                         strNd = strNd.Replace(",", "");
@@ -196,6 +239,9 @@ namespace WindowsFormsApplication17
                 #region deling
                 case '/':
                     {
+                        int moveCheck = -1;
+                        if (Find_Period(st, nd, 1) != "")
+                            moveCheck = Convert.ToInt16(Find_Period(st, nd, 2)) + Find_Period(st, nd, 1).Length / 2;
                         Decimal answer = st / nd;
                         int an_len = answer.ToString().Length;
                         int pluss = 1;
@@ -211,20 +257,20 @@ namespace WindowsFormsApplication17
                         bmp = new Bitmap(((strNd.Length + strSt.Length) * 25 + 60 + (pluss.ToString().Length - 1) * 25) * scale, 120 * scale);
                         Graphics gr = Graphics.FromImage(bmp);
                         gr.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-                        gr.DrawString(strSt, std, new SolidBrush(Color.Black), new Point(0, 10 * scale));
+                        gr.DrawString((minus == -1) ? strSt : "-" + strSt, std, new SolidBrush(Color.Black), new Point((minus == -1) ? 0: -5 * scale, 10 * scale));
                         strSt = (Convert.ToDecimal(strSt) * pluss).ToString();
-                        gr.DrawLine(new Pen(new SolidBrush(Color.Black), scale), new Point(5 * scale + Lenght(strSt, std), 55 * scale), new Point((bmp.Width - 10 * scale), 55 * scale));
-                        gr.DrawLine(new Pen(new SolidBrush(Color.Black), scale), new Point(5 * scale + Lenght(strSt, std), 105 * scale), new Point(5 * scale + Lenght(strSt, std), 5 * scale));
-                        gr.DrawString(strNd, std, new SolidBrush(Color.Black), new Point(5 * scale + Lenght(strSt, std), 10 * scale));
+                        gr.DrawLine(new Pen(new SolidBrush(Color.Black), scale), new Point(5 * scale + Lenght((minus == -1) ? strSt : "-" + strSt, std), 55 * scale), new Point((bmp.Width - 10 * scale), 55 * scale));
+                        gr.DrawLine(new Pen(new SolidBrush(Color.Black), scale), new Point(5 * scale + Lenght((minus == -1) ? strSt : "-" + strSt, std), 105 * scale), new Point(5 * scale + Lenght((minus == -1) ? strSt : "-" + strSt, std), 5 * scale));
+                        gr.DrawString((minus2 == -1) ? strNd : "-" + strNd, std, new SolidBrush(Color.Black), new Point(5 * scale + Lenght((minus == -1) ? strSt : "-" + strSt, std), 10 * scale));
                         int found = Find_Form(answer.ToString(), ',');
                         if(found == -1) found = 0;
-                        bmp = change(5 + Lenght(strSt, new Font("", std.Size / scale)), 65, answer, std, bmp, scale);
+                        bmp = change(5 + Lenght((minus == -1) ? strSt : "-" + strSt, new Font("", std.Size / scale)), 65, answer, std, bmp, scale);
                         gr = Graphics.FromImage(bmp);
                         string f3 = Find_Period(st, nd, 3);
                         if (f3 == "")
                             f3 = "0";
                         string anString = (ServerMachine.usage > 0) ? answer.ToString().Substring(0, (found != 0) ? found + 1 + (afterPoint + 1 + found < answer.ToString().Length ? afterPoint + 1 + found : answer.ToString().Length - found - 1) : answer.ToString().Length) : answer.ToString().Substring(0, Convert.ToInt32(f3)) + Find_Period(st, nd, 1);
-                        gr.DrawString(anString, std, new SolidBrush(Color.Black), new Point(5 * scale + Lenght(strSt, std), 65 * scale));
+                        gr.DrawString(((minus == -1 && minus2 != -1) || (minus2 == -1 && minus != -1) ? "-" : "") + (answer % 1 == 0 ? answer.ToString() : anString), std, new SolidBrush(Color.Black), new Point(5 * scale + Lenght((minus == -1) ? strSt : "-" + strSt, std), 65 * scale));
                         int length = 1;
                         while (((strSt[length - 1] == ',') ? Convert.ToDecimal(strSt.Substring(0, length - 1)) : Convert.ToDecimal(strSt.Substring(0, length))) < Convert.ToDecimal(strNd))
                         {
@@ -239,11 +285,11 @@ namespace WindowsFormsApplication17
                             if (length2 == strNd.Length)
                                 break;
                         }
-                        gr.DrawArc(new Pen(new SolidBrush(Color.Black), 5), new Rectangle(new Point(10 * scale, 0), new Size((length * 25) * scale, 30 * scale)),  180 , 180);
+                        gr.DrawArc(new Pen(new SolidBrush(Color.Black), 5), new Rectangle(new Point((minus == -1) ? 10 * scale : 20 * scale, 0), new Size((length * 25) * scale, 30 * scale)), 180, 180);
                         int locY = 65;
                         bool canUp = true;
                         Decimal tempSt = Convert.ToDecimal(strSt.Substring(0, length));
-                        int locX = Lenght(tempSt.ToString(), new Font("", std.Size / scale));
+                        int locX = Lenght(tempSt.ToString() + (minus == -1 ? "" : "-"), new Font("", std.Size / scale));
                         Decimal tempNd = Convert.ToDecimal(strNd);
                         Decimal plus = tempSt;
                         Decimal oldSt = 0;
@@ -388,9 +434,63 @@ namespace WindowsFormsApplication17
         }
         #endregion
         #region Main
-        public static bool IsInPeriod(decimal st, decimal nd)
+        public static Dictionary<char, int> ItemLengths;
+        public static List<Control> SetText(Panel pan, string str)
         {
-            return true;
+            ItemLengths.Add('0', 25);
+            ItemLengths.Add('1', 25);
+            ItemLengths.Add('2', 25);
+            ItemLengths.Add('3', 25);
+            ItemLengths.Add('4', 25);
+            ItemLengths.Add('5', 25);
+            ItemLengths.Add('6', 25);
+            ItemLengths.Add('7', 25);
+            ItemLengths.Add('8', 25);
+            ItemLengths.Add('9', 25);
+            ItemLengths.Add(',', 25);
+            ItemLengths.Add('/', 15);
+            ItemLengths.Add('(', 15);
+            ItemLengths.Add(')', 15);
+            List<Control> picList = new List<Control>();
+            decimal scale = 10;
+            Bitmap bmp = new Bitmap(Convert.ToInt32(str.Length * 25 >= pan.Width ? str.Length * 25 * scale : (pan.Width + 50) * scale), Convert.ToInt32(pan.Height * scale - 7 * scale));
+            Graphics gr = Graphics.FromImage(bmp);
+            gr.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            int trueLoc = 0;
+            for (int Ich = 0; Ich < str.Length; Ich++ )
+            {
+                PictureBox pb = new PictureBox();
+                //decimal scale = Convert.ToDecimal(pan.Height) / 50m;
+                pb.Size = new Size(Convert.ToInt32(27/* * scale*/), Convert.ToInt32(60/* * scale*/));
+                pb.BackColor = Color.Transparent;
+                pb.Location = new Point(Convert.ToInt32(trueLoc - 6/* * scale*/), 0);
+                Font std = new Font("", (float)(33 * scale));
+                gr.DrawString(str[Ich].ToString(), std, new SolidBrush(Color.Black), new Point(Convert.ToInt32(trueLoc * scale - 6 * scale), 0));
+                char empty = 'ы';
+                if ((str[Ich] == '*' || str[Ich] == '/' || str[Ich] == '-' || str[Ich] == '+' || str[Ich] == '^') && (((Ich > 0 ? str[Ich - 1] : empty) != '*') && ((Ich > 0 ? str[Ich - 1] : empty) != '/') && ((Ich > 0 ? str[Ich - 1] : empty) != '-') && ((Ich > 0 ? str[Ich - 1] : empty) != '+') && ((Ich > 0 ? str[Ich - 1] : empty) != '^')))
+                {
+                    pb.Tag = Calculator.Compute(str, Ich).ToString();
+                    pb.MouseEnter += pb_MouseEnter;
+                    pb.MouseLeave += pb_MouseLeave;
+                }
+                picList.Add(pb);
+                trueLoc += ItemLengths[str[Ich]];
+            }
+            
+            pan.BackgroundImage = bmp;
+            pan.BackgroundImageLayout = ImageLayout.Stretch;
+            GC.Collect();
+            return picList;
+        }
+
+        static void pb_MouseLeave(object sender, EventArgs e)
+        {
+            ServerMachine.senPic = null;
+        }
+
+        static void pb_MouseEnter(object sender, EventArgs e)
+        {
+            ServerMachine.senPic = ((PictureBox)sender);
         }
         //Код симулирует решение в столбик
         static int Find_Form(string str, char ch)
@@ -412,6 +512,15 @@ namespace WindowsFormsApplication17
         }
         public static string Find_Period(decimal st, decimal nd, int bab)
         {
+            int minus = 1;
+            if (st > 0 && nd < 0)
+                minus = -1;
+            else if (st < 0 && nd > 0)
+                minus = -1;
+            if (st < 0)
+                st *= -1;
+            if (nd < 0)
+                nd *= -1;
             string answer = (st / nd).ToString();
             string halfAnswer = answer.Substring(Find_Form(answer, ',') + 1);
             List<int[]> listing = new List<int[]>();
@@ -484,6 +593,24 @@ namespace WindowsFormsApplication17
             }
             return "";
         }
+        public static string KillTroubles(string str)
+        {
+            Begin();
+            for(int i = 0; i < str.Length; i++)
+            {
+                switch(str[i])
+                {
+                    case '^':
+                        string d = FindValue(i, str, false);
+                        string dd = FindValue(i, str, true);
+                        double d1 = Convert.ToDouble(dt.Compute(d, string.Empty));
+                        double d2 = Convert.ToDouble(dt.Compute(dd, string.Empty));
+                        str = str.Replace(d + '^' + dd, Math.Pow(d1, d2).ToString());
+                        break;
+                }
+            }
+            return str;
+        }
         public static string FindExpression(string str, int step)
         {
             string st = FindValue(step, str, false);
@@ -516,6 +643,7 @@ namespace WindowsFormsApplication17
                 priora.Add('-', 1);
                 priora.Add('/', 3);
                 priora.Add('*', 3);
+                priora.Add('^', 4);
             }
         }
         public static string MakeX(string str)
@@ -650,7 +778,7 @@ namespace WindowsFormsApplication17
                         try
                         {
                             if(str[i] != '.')
-                                (Convert.ToDecimal(str.Substring(barrier + 1, i - barrier).Replace('.', ','))).ToString();
+                                (Convert.ToDouble(str.Substring(barrier + 1, i - barrier).Replace('.', ','))).ToString();
                         }
                         catch (FormatException)
                         {
@@ -674,10 +802,11 @@ namespace WindowsFormsApplication17
                     {
                         try
                         {
-                            Decimal temp;
+                            double temp;
                             if (str[i] != '.')
                             {
-                                temp = Convert.ToDecimal(str.Substring(i, barrier - i).Replace('.', ','));
+                                string stul = str.Substring(i, barrier - i).Replace('.', ',');
+                                temp = Convert.ToDouble(stul);
                                 if (temp < 0 || str[i] == '+')
                                     throw new FormatException();
                             }
@@ -687,7 +816,7 @@ namespace WindowsFormsApplication17
                             if (str[i] == ')')
                                 i = RefindBracket(str, i);
                             else if (str[i] == '(')
-                                return str.Substring(i + 1, root - i - 1);
+                                return str.Substring(i + 1, root - i - 2);
                             else if (priora[str[i]] >= priora[str[root]])
                                 barrier = i;
                             else
@@ -707,7 +836,7 @@ namespace WindowsFormsApplication17
         {
             Begin();
             str = str.Replace(',', '.');
-            return Convert.ToDecimal(dt.Compute(FindExpression(str, location), string.Empty));
+            return Convert.ToDecimal(dt.Compute(KillTroubles(FindExpression(str, location)), string.Empty));
         }
         public static string Simpler(string str,int beg, int end, int mode, bool may)
         {

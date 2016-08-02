@@ -108,6 +108,7 @@
             this.button27 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.CalculatorPage = new System.Windows.Forms.TabPage();
+            this.textPanel1 = new System.Windows.Forms.Panel();
             this.button79 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -169,7 +170,6 @@
             this.NotePanel = new System.Windows.Forms.Panel();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.NotePage = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.advancedButton4 = new WindowsFormsApplication17.AdvancedButton();
             this.advancedButton3 = new WindowsFormsApplication17.AdvancedButton();
             this.advancedButton2 = new WindowsFormsApplication17.AdvancedButton();
@@ -204,7 +204,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.NotePage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.switcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.switcher2)).BeginInit();
             this.SuspendLayout();
@@ -1202,7 +1201,7 @@
             // CalculatorPage
             // 
             this.CalculatorPage.BackColor = System.Drawing.Color.Silver;
-            this.CalculatorPage.Controls.Add(this.pictureBox8);
+            this.CalculatorPage.Controls.Add(this.textPanel1);
             this.CalculatorPage.Controls.Add(this.button79);
             this.CalculatorPage.Controls.Add(this.button36);
             this.CalculatorPage.Controls.Add(this.button37);
@@ -1222,6 +1221,18 @@
             this.CalculatorPage.Size = new System.Drawing.Size(550, 585);
             this.CalculatorPage.TabIndex = 1;
             this.CalculatorPage.Text = "CalculatorPage";
+            // 
+            // textPanel1
+            // 
+            this.textPanel1.AutoScroll = true;
+            this.textPanel1.BackColor = System.Drawing.Color.White;
+            this.textPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.textPanel1.Location = new System.Drawing.Point(21, 62);
+            this.textPanel1.Name = "textPanel1";
+            this.textPanel1.Size = new System.Drawing.Size(334, 63);
+            this.textPanel1.TabIndex = 34;
+            this.textPanel1.Visible = false;
+            this.textPanel1.MouseLeave += new System.EventHandler(this.textBox1_MouseLeave);
             // 
             // button79
             // 
@@ -1495,7 +1506,6 @@
             this.textBox1.Text = "";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.MouseLeave += new System.EventHandler(this.textBox1_MouseLeave);
-            this.textBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseMove);
             // 
             // label1
             // 
@@ -1991,16 +2001,6 @@
             this.NotePage.Size = new System.Drawing.Size(500, 517);
             this.NotePage.TabIndex = 1;
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.White;
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox8.Location = new System.Drawing.Point(114, -11);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(361, 503);
-            this.pictureBox8.TabIndex = 34;
-            this.pictureBox8.TabStop = false;
-            // 
             // advancedButton4
             // 
             this.advancedButton4.BackColor = System.Drawing.Color.Transparent;
@@ -2149,7 +2149,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.NotePage.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.switcher1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.switcher2)).EndInit();
             this.ResumeLayout(false);
@@ -2308,7 +2307,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.Label ProLabel;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Panel textPanel1;
     }
 }
 

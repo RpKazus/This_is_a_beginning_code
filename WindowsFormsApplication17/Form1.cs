@@ -146,6 +146,13 @@ namespace WindowsFormsApplication17
                 }
                 ServerMachine.pressed = "";
             }
+            if(ServerMachine.senPic != null)
+            {
+                label1.Location = new Point(ServerMachine.senPic.Location.X + textPanel1.Location.X, 0);
+                label1.BackColor = Color.Yellow;
+                label1.Text = ServerMachine.senPic.Tag.ToString();
+                label1.BringToFront();
+            }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -154,8 +161,6 @@ namespace WindowsFormsApplication17
         }
         public void button_button_Click(object sender, EventArgs e)
         {
-            pictureBox8.BackgroundImage = Calculator.Count_Paint(720.25m, '+',8.578m);
-            textBox2.Text = Calculator.Find_Period(3m, 101m, 1);
             if (!btf.Visible)
             {
                 btf.Show();
@@ -191,7 +196,7 @@ namespace WindowsFormsApplication17
             char lastchar = '0';
             foreach (char ch in textBox1.Text)
             {
-                if ((ch == '*' || ch == '/' || ch == '-' || ch == '+') && (lastchar != '*' && lastchar != '/' && lastchar != '-' && lastchar != '+'))
+                if ((ch == '*' || ch == '/' || ch == '-' || ch == '+' || ch == '^') && (lastchar != '*' && lastchar != '/' && lastchar != '-' && lastchar != '+' && lastchar != '^'))
                 {
                     ExtraClist.Add(lenght);
                     Clist.Add(new Point(Lenght(textBox1.Text.Substring(0, lenght), textBox1.Font), 0));
@@ -215,10 +220,10 @@ namespace WindowsFormsApplication17
             journal1.AddResume(textBox1.Text);
             try
             {
-                dt.Compute(textBox1.Text, string.Empty);
-                if (ShowAnswers.Checked)
-                    SetPoints();
-                textBox1.Text += "=" + dt.Compute(textBox1.Text, string.Empty);
+                dt.Compute(Calculator.KillTroubles(textBox1.Text), string.Empty);
+                textPanel1.Controls.AddRange(Calculator.SetText(textPanel1, textBox1.Text).ToArray());
+                textPanel1.Visible = true;
+                textBox1.Text += "=" + dt.Compute(Calculator.KillTroubles(textBox1.Text), string.Empty);
                 button11.Enabled = true;
                 textBox1.ReadOnly = true;
                 foreach (Control c in panel1.Controls)
@@ -264,12 +269,7 @@ namespace WindowsFormsApplication17
         private void textBox1_MouseLeave(object sender, EventArgs e)
         {
             if (isWorked)
-            {
-                textBox1.SelectAll();
-                textBox1.SelectionBackColor = Color.White;
                 label1.Text = "";
-                textBox1.DeselectAll();
-            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -305,6 +305,7 @@ namespace WindowsFormsApplication17
             ExtraClist.Clear();
             textBox1.ReadOnly = false;
             button37.Enabled = false;
+            textPanel1.Visible = false;
         }
         private void button11_Click(object sender, EventArgs e)
         {
@@ -323,7 +324,7 @@ namespace WindowsFormsApplication17
             check = (Resume)((ContextMenuStrip)sender).SourceControl;
             try
             {
-                dt.Compute(check.Link, string.Empty);
+                dt.Compute(Calculator.KillTroubles(check.Link), string.Empty);
             }
             catch (Exception)
             {
