@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,7 +40,7 @@ namespace WindowsFormsApplication17
         public static int Lenght(string str, Font font)
         {
             PaintEventArgs e = new PaintEventArgs(ServerMachine.ActivePage.CreateGraphics(), new Rectangle(0, 0, 1000, 1000));
-            return (int)e.Graphics.MeasureString(str, font, 1000000).Width - 1 * str.Length;
+            return (int)e.Graphics.MeasureString(str, font, 1000000).Width;
             //return (int)(str.Length * font.Size / (35 / 33));
         }
         public static Image Count_Paint(Decimal st, char val, Decimal nd)
@@ -434,47 +435,56 @@ namespace WindowsFormsApplication17
         }
         #endregion
         #region Main
-        public static Dictionary<char, int> ItemLengths;
-        public static List<Control> SetText(Panel pan, string str)
+        public static Dictionary<char, int> ItemLengths = new Dictionary<char,int>();
+        public static List<Control> SetText(Panel pan, string str, Font std)
         {
-            ItemLengths.Add('0', 25);
-            ItemLengths.Add('1', 25);
-            ItemLengths.Add('2', 25);
-            ItemLengths.Add('3', 25);
-            ItemLengths.Add('4', 25);
-            ItemLengths.Add('5', 25);
-            ItemLengths.Add('6', 25);
-            ItemLengths.Add('7', 25);
-            ItemLengths.Add('8', 25);
-            ItemLengths.Add('9', 25);
-            ItemLengths.Add(',', 25);
-            ItemLengths.Add('/', 15);
-            ItemLengths.Add('(', 15);
-            ItemLengths.Add(')', 15);
+            if (ItemLengths.Count == 0)
+            {
+                ItemLengths.Add('+', 21);
+                ItemLengths.Add('*', 17);
+                ItemLengths.Add('^', 16);
+                ItemLengths.Add('/', 8);
+                ItemLengths.Add('-', 8);
+            }
             List<Control> picList = new List<Control>();
             decimal scale = 10;
-            Bitmap bmp = new Bitmap(Convert.ToInt32(str.Length * 25 >= pan.Width ? str.Length * 25 * scale : (pan.Width + 50) * scale), Convert.ToInt32(pan.Height * scale - 7 * scale));
+            std = new Font("", std.Size * (float)scale);
+            Bitmap bmp = new Bitmap(Convert.ToInt32(Lenght(str, std) >= pan.Width ? Lenght(str, std) : (pan.Width) * scale), Convert.ToInt32(pan.Height * scale - 7 * scale));
             Graphics gr = Graphics.FromImage(bmp);
             gr.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            int trueLoc = 0;
+            int trueLoc = -4;
+            //gr.DrawString(str, std, new SolidBrush(Color.Black), 0, 0);
             for (int Ich = 0; Ich < str.Length; Ich++ )
             {
-                PictureBox pb = new PictureBox();
-                //decimal scale = Convert.ToDecimal(pan.Height) / 50m;
-                pb.Size = new Size(Convert.ToInt32(27/* * scale*/), Convert.ToInt32(60/* * scale*/));
-                pb.BackColor = Color.Transparent;
-                pb.Location = new Point(Convert.ToInt32(trueLoc - 6/* * scale*/), 0);
-                Font std = new Font("", (float)(33 * scale));
-                gr.DrawString(str[Ich].ToString(), std, new SolidBrush(Color.Black), new Point(Convert.ToInt32(trueLoc * scale - 6 * scale), 0));
+                
+                gr.DrawString(str[Ich].ToString(), std, new SolidBrush(Color.Black), new Point(Convert.ToInt32(trueLoc * scale), 0));
                 char empty = 'ы';
                 if ((str[Ich] == '*' || str[Ich] == '/' || str[Ich] == '-' || str[Ich] == '+' || str[Ich] == '^') && (((Ich > 0 ? str[Ich - 1] : empty) != '*') && ((Ich > 0 ? str[Ich - 1] : empty) != '/') && ((Ich > 0 ? str[Ich - 1] : empty) != '-') && ((Ich > 0 ? str[Ich - 1] : empty) != '+') && ((Ich > 0 ? str[Ich - 1] : empty) != '^')))
                 {
+                    PictureBox pb = new PictureBox();
+                    //decimal scale = Convert.ToDecimal(pan.Height) / 50m;
+                    pb.Size = new Size(ItemLengths[str[Ich]], Convert.ToInt32(60/* * scale*/));
+                    pb.BackColor = Color.Transparent;
+                    pb.Location = new Point(Convert.ToInt32(trueLoc/* * scale*/), 0);
+                    pb.BackColor = Color.FromArgb(0, 0, 0, 0);
+                    pb.BackgroundImage = ServerMachine.BackImages[4];
+                    pb.BackgroundImageLayout = ImageLayout.Stretch;
                     pb.Tag = Calculator.Compute(str, Ich).ToString();
                     pb.MouseEnter += pb_MouseEnter;
                     pb.MouseLeave += pb_MouseLeave;
+                    picList.Add(pb);
                 }
-                picList.Add(pb);
-                trueLoc += ItemLengths[str[Ich]];
+                else if (Ich == str.Length - 1)
+                {
+                    PictureBox pb = new PictureBox();
+                    //decimal scale = Convert.ToDecimal(pan.Height) / 50m;
+                    pb.Size = new Size(Convert.ToInt32(Lenght(str[Ich].ToString(), new Font("", Convert.ToInt16(std.Size / (float)scale))) - scale/* * scale*/), Convert.ToInt32(60/* * scale*/));
+                    pb.BackColor = Color.Transparent;
+                    pb.Location = new Point(Convert.ToInt32(trueLoc/* * scale*/), 0);
+                    picList.Add(pb);
+                    pb.SendToBack();
+                }
+                trueLoc += Lenght(str[Ich].ToString(), new Font("", Convert.ToInt16(std.Size / (float)scale))) - Convert.ToInt16(scale);
             }
             
             pan.BackgroundImage = bmp;
@@ -816,7 +826,7 @@ namespace WindowsFormsApplication17
                             if (str[i] == ')')
                                 i = RefindBracket(str, i);
                             else if (str[i] == '(')
-                                return str.Substring(i + 1, root - i - 2);
+                                return str.Substring(i + 1, root - i - 1);
                             else if (priora[str[i]] >= priora[str[root]])
                                 barrier = i;
                             else

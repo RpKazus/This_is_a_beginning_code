@@ -124,14 +124,14 @@
   <data name="watch_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\watch_out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="тудыть_вкл" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\тудыть_вкл.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="листок" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\листок.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="оттудыть" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\оттудыть.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="угол" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\угол.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="write" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\write.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,11 +142,14 @@
   <data name="write_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\write_out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="тудыть_вкл" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\тудыть_вкл.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="угол" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\угол.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="листок_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\листок_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="button_light" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button_light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,10 +169,25 @@
   <data name="тудыть" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\тудыть.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="backcolor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backcolor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="листок_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\листок_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="backcolor_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backcolor_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backcolor_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backcolor_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backcolor_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backcolor_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backcolor_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backcolor_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backcolor_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backcolor_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

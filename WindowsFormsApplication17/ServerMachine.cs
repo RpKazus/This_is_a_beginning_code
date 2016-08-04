@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,5 +19,6 @@ namespace WindowsFormsApplication17
         public static MethodInvoker Invalidate;
         public static int usage = 0;
         public static PictureBox senPic = null;
+        public static Image[] BackImages = new Image[5] { Properties.Resources.backcolor_5, Properties.Resources.backcolor_4, Properties.Resources.backcolor_3, Properties.Resources.backcolor_1, Properties.Resources.backcolor_2};
     }
 }

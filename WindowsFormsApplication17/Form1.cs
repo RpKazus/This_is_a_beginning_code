@@ -16,6 +16,7 @@ namespace WindowsFormsApplication17
         Point beforeLoc;
         object FakeSender = new object();
         EventArgs FakE = new EventArgs();
+        PictureBox lastPb;
         public Form1()
         {
             InitializeComponent();
@@ -152,6 +153,25 @@ namespace WindowsFormsApplication17
                 label1.BackColor = Color.Yellow;
                 label1.Text = ServerMachine.senPic.Tag.ToString();
                 label1.BringToFront();
+                if(ServerMachine.senPic.BackColor.R < 15)
+                {
+                    ServerMachine.senPic.BackgroundImage = ServerMachine.BackImages[Convert.ToInt16(ServerMachine.senPic.BackColor.R / 3)];
+                    ServerMachine.senPic.BackColor = Color.FromArgb(0, ServerMachine.senPic.BackColor.R + 1, 0, 0);
+                    lastPb = ServerMachine.senPic;
+                    ServerMachine.senPic.BringToFront();
+                }
+                GC.Collect();
+                //ServerMachine.senPic.BackgroundImage;
+            }
+            else if(lastPb != null && ServerMachine.senPic == null)
+            {
+                if (lastPb.BackColor.R > 0)
+                {
+                    lastPb.BackColor = Color.FromArgb(0, lastPb.BackColor.R - 1, 0, 0);
+                    lastPb.BackgroundImage = ServerMachine.BackImages[Convert.ToInt16(lastPb.BackColor.R / 3)];
+                }
+                else
+                    lastPb = null;
             }
         }
 
@@ -209,7 +229,7 @@ namespace WindowsFormsApplication17
         private int Lenght(string str, Font font)
         {
             PaintEventArgs e = new PaintEventArgs(this.CreateGraphics(), new Rectangle(0, 0, 1000, 1000));
-            return (int)e.Graphics.MeasureString(str, font, 1000000).Width - 1 * str.Length;
+            return (int)e.Graphics.MeasureString(str, font, 1000000).Width;
             //return (int)(str.Length * font.Size / (35 / 33));
         }
         private void button1_Click(object sender, EventArgs e)
@@ -221,7 +241,7 @@ namespace WindowsFormsApplication17
             try
             {
                 dt.Compute(Calculator.KillTroubles(textBox1.Text), string.Empty);
-                textPanel1.Controls.AddRange(Calculator.SetText(textPanel1, textBox1.Text).ToArray());
+                textPanel1.Controls.AddRange(Calculator.SetText(textPanel1, textBox1.Text, textBox1.Font).ToArray());
                 textPanel1.Visible = true;
                 textBox1.Text += "=" + dt.Compute(Calculator.KillTroubles(textBox1.Text), string.Empty);
                 button11.Enabled = true;
@@ -236,6 +256,7 @@ namespace WindowsFormsApplication17
             }
             textBox1.Text = textBox1.Text.Replace('.', ',');
             button37.Enabled = true;
+            textBox1.Text = Lenght("2", new Font("", 33)).ToString();
         }
         private void textBox1_MouseMove(object sender, MouseEventArgs e)
         {
@@ -306,6 +327,7 @@ namespace WindowsFormsApplication17
             textBox1.ReadOnly = false;
             button37.Enabled = false;
             textPanel1.Visible = false;
+            textPanel1.Controls.Clear();
         }
         private void button11_Click(object sender, EventArgs e)
         {
@@ -345,7 +367,7 @@ namespace WindowsFormsApplication17
 
         private void кToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox1.Text += dt.Compute(check.Link, string.Empty);
+            textBox1.Text += dt.Compute(Calculator.KillTroubles(check.Link), string.Empty);
         }
 
         private void button79_Click(object sender, EventArgs e)

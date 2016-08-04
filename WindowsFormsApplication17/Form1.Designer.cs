@@ -63,6 +63,7 @@
             this.untoodit = new System.Windows.Forms.PictureBox();
             this.toodit = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.switcher2 = new WindowsFormsApplication17.Switcher();
             this.button40 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button42 = new System.Windows.Forms.Button();
@@ -77,6 +78,7 @@
             this.button56 = new System.Windows.Forms.Button();
             this.button57 = new System.Windows.Forms.Button();
             this.button58 = new System.Windows.Forms.Button();
+            this.journal3 = new WindowsFormsApplication17.Journal();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.OptionsPage = new System.Windows.Forms.TabPage();
             this.PolishBox = new System.Windows.Forms.DomainUpDown();
@@ -87,6 +89,7 @@
             this.ParcePage = new System.Windows.Forms.TabPage();
             this.button80 = new System.Windows.Forms.Button();
             this.label_proschet = new System.Windows.Forms.Label();
+            this.switcher1 = new WindowsFormsApplication17.Switcher();
             this.textBox2 = new System.Windows.Forms.RichTextBox();
             this.button32 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -106,10 +109,12 @@
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
+            this.journal2 = new WindowsFormsApplication17.Journal();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.CalculatorPage = new System.Windows.Forms.TabPage();
             this.textPanel1 = new System.Windows.Forms.Panel();
             this.button79 = new System.Windows.Forms.Button();
+            this.journal1 = new WindowsFormsApplication17.Journal();
             this.button29 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -135,6 +140,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabCon = new System.Windows.Forms.TabControl();
             this.NotePage1 = new System.Windows.Forms.TabPage();
+            this.journal4 = new WindowsFormsApplication17.Journal();
             this.ProLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.X2 = new System.Windows.Forms.Label();
@@ -165,32 +171,28 @@
             this.button78 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.NotePanel = new System.Windows.Forms.Panel();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.tools1 = new WindowsFormsApplication17.ToolBox();
             this.NotePage = new System.Windows.Forms.Panel();
             this.advancedButton4 = new WindowsFormsApplication17.AdvancedButton();
             this.advancedButton3 = new WindowsFormsApplication17.AdvancedButton();
             this.advancedButton2 = new WindowsFormsApplication17.AdvancedButton();
             this.advancedButton1 = new WindowsFormsApplication17.AdvancedButton();
-            this.journal1 = new WindowsFormsApplication17.Journal();
-            this.switcher1 = new WindowsFormsApplication17.Switcher();
-            this.journal2 = new WindowsFormsApplication17.Journal();
-            this.switcher2 = new WindowsFormsApplication17.Switcher();
-            this.journal3 = new WindowsFormsApplication17.Journal();
-            this.journal4 = new WindowsFormsApplication17.Journal();
-            this.tools1 = new WindowsFormsApplication17.ToolBox();
             this.contextMenuStrip1.SuspendLayout();
             this.MathPage.SuspendLayout();
             this.textPan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.untoodit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toodit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.switcher2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.OptionsPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.ParcePage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.switcher1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.CalculatorPage.SuspendLayout();
@@ -200,12 +202,10 @@
             this.tabCon.SuspendLayout();
             this.NotePage1.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.NotePage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.switcher1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.switcher2)).BeginInit();
             this.SuspendLayout();
             // 
             // ExceptionTimer
@@ -520,10 +520,10 @@
             this.MathPage.Controls.Add(this.switcher2);
             this.MathPage.Controls.Add(this.button40);
             this.MathPage.Controls.Add(this.panel3);
+            this.MathPage.Controls.Add(this.journal3);
             this.MathPage.Controls.Add(this.button38);
             this.MathPage.Controls.Add(this.button39);
             this.MathPage.Controls.Add(this.pictureBox5);
-            this.MathPage.Controls.Add(this.journal3);
             this.MathPage.Location = new System.Drawing.Point(4, 22);
             this.MathPage.Name = "MathPage";
             this.MathPage.Padding = new System.Windows.Forms.Padding(3);
@@ -627,6 +627,14 @@
             this.label4.Size = new System.Drawing.Size(110, 13);
             this.label4.TabIndex = 28;
             this.label4.Text = "Авто просчёт : Выкл";
+            // 
+            // switcher2
+            // 
+            this.switcher2.Location = new System.Drawing.Point(407, 3);
+            this.switcher2.Name = "switcher2";
+            this.switcher2.Size = new System.Drawing.Size(41, 23);
+            this.switcher2.TabIndex = 27;
+            this.switcher2.TabStop = false;
             // 
             // button40
             // 
@@ -815,6 +823,15 @@
             this.button58.Click += new System.EventHandler(this.buttonMath_Click);
             this.button58.Paint += new System.Windows.Forms.PaintEventHandler(this.ButtonMath_Paint);
             // 
+            // journal3
+            // 
+            this.journal3.BackColor = System.Drawing.Color.DarkGray;
+            this.journal3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.journal3.Location = new System.Drawing.Point(387, 61);
+            this.journal3.Name = "journal3";
+            this.journal3.Size = new System.Drawing.Size(140, 432);
+            this.journal3.TabIndex = 31;
+            // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -914,10 +931,10 @@
             this.ParcePage.Controls.Add(this.button32);
             this.ParcePage.Controls.Add(this.button31);
             this.ParcePage.Controls.Add(this.panel2);
+            this.ParcePage.Controls.Add(this.journal2);
             this.ParcePage.Controls.Add(this.button35);
             this.ParcePage.Controls.Add(this.button34);
             this.ParcePage.Controls.Add(this.pictureBox2);
-            this.ParcePage.Controls.Add(this.journal2);
             this.ParcePage.Location = new System.Drawing.Point(4, 22);
             this.ParcePage.Name = "ParcePage";
             this.ParcePage.Padding = new System.Windows.Forms.Padding(3);
@@ -948,6 +965,15 @@
             this.label_proschet.Size = new System.Drawing.Size(110, 13);
             this.label_proschet.TabIndex = 28;
             this.label_proschet.Text = "Авто просчёт : Выкл";
+            // 
+            // switcher1
+            // 
+            this.switcher1.Location = new System.Drawing.Point(407, 3);
+            this.switcher1.Name = "switcher1";
+            this.switcher1.Size = new System.Drawing.Size(41, 23);
+            this.switcher1.TabIndex = 27;
+            this.switcher1.TabStop = false;
+            this.switcher1.Click += new System.EventHandler(this.switcher1_Click);
             // 
             // textBox2
             // 
@@ -1189,6 +1215,15 @@
             this.button27.UseVisualStyleBackColor = true;
             this.button27.Click += new System.EventHandler(this.button_Parce_Click);
             // 
+            // journal2
+            // 
+            this.journal2.BackColor = System.Drawing.Color.DarkGray;
+            this.journal2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.journal2.Location = new System.Drawing.Point(387, 61);
+            this.journal2.Name = "journal2";
+            this.journal2.Size = new System.Drawing.Size(140, 435);
+            this.journal2.TabIndex = 31;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -1248,6 +1283,15 @@
             this.button79.Text = "button79";
             this.button79.UseVisualStyleBackColor = false;
             this.button79.Click += new System.EventHandler(this.button79_Click);
+            // 
+            // journal1
+            // 
+            this.journal1.BackColor = System.Drawing.Color.DarkGray;
+            this.journal1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.journal1.Location = new System.Drawing.Point(387, 61);
+            this.journal1.Name = "journal1";
+            this.journal1.Size = new System.Drawing.Size(140, 435);
+            this.journal1.TabIndex = 27;
             // 
             // button29
             // 
@@ -1563,18 +1607,27 @@
             this.NotePage1.Controls.Add(this.panel4);
             this.NotePage1.Controls.Add(this.textBox4);
             this.NotePage1.Controls.Add(this.label6);
+            this.NotePage1.Controls.Add(this.NotePanel);
+            this.NotePage1.Controls.Add(this.trackBar1);
             this.NotePage1.Controls.Add(this.button45);
             this.NotePage1.Controls.Add(this.button46);
             this.NotePage1.Controls.Add(this.pictureBox6);
             this.NotePage1.Controls.Add(this.pictureBox7);
-            this.NotePage1.Controls.Add(this.NotePanel);
-            this.NotePage1.Controls.Add(this.trackBar1);
             this.NotePage1.Location = new System.Drawing.Point(4, 22);
             this.NotePage1.Name = "NotePage1";
             this.NotePage1.Padding = new System.Windows.Forms.Padding(3);
             this.NotePage1.Size = new System.Drawing.Size(550, 585);
             this.NotePage1.TabIndex = 5;
             this.NotePage1.Text = "NotePage";
+            // 
+            // journal4
+            // 
+            this.journal4.BackColor = System.Drawing.Color.DarkGray;
+            this.journal4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.journal4.Location = new System.Drawing.Point(387, 61);
+            this.journal4.Name = "journal4";
+            this.journal4.Size = new System.Drawing.Size(140, 435);
+            this.journal4.TabIndex = 27;
             // 
             // ProLabel
             // 
@@ -1948,25 +2001,6 @@
             this.label6.Size = new System.Drawing.Size(0, 20);
             this.label6.TabIndex = 4;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox6.Location = new System.Drawing.Point(-40, 29);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(584, 1);
-            this.pictureBox6.TabIndex = 24;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox7.Image = global::WindowsFormsApplication17.Properties.Resources.tabel;
-            this.pictureBox7.Location = new System.Drawing.Point(-7, 77);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(20, 376);
-            this.pictureBox7.TabIndex = 26;
-            this.pictureBox7.TabStop = false;
-            // 
             // NotePanel
             // 
             this.NotePanel.AutoScroll = true;
@@ -1987,6 +2021,32 @@
             this.trackBar1.Size = new System.Drawing.Size(140, 45);
             this.trackBar1.TabIndex = 45;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox6.Location = new System.Drawing.Point(-40, 29);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(584, 1);
+            this.pictureBox6.TabIndex = 24;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Silver;
+            this.pictureBox7.Image = global::WindowsFormsApplication17.Properties.Resources.tabel;
+            this.pictureBox7.Location = new System.Drawing.Point(-7, 77);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(20, 376);
+            this.pictureBox7.TabIndex = 26;
+            this.pictureBox7.TabStop = false;
+            // 
+            // tools1
+            // 
+            this.tools1.Location = new System.Drawing.Point(358, 179);
+            this.tools1.Name = "tools1";
+            this.tools1.Size = new System.Drawing.Size(200, 100);
+            this.tools1.TabIndex = 0;
             // 
             // NotePage
             // 
@@ -2045,66 +2105,6 @@
             this.advancedButton1.TabIndex = 0;
             this.advancedButton1.Tag = "   КАЛЬКУЛЯТОР";
             // 
-            // journal1
-            // 
-            this.journal1.BackColor = System.Drawing.Color.DarkGray;
-            this.journal1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.journal1.Location = new System.Drawing.Point(387, 61);
-            this.journal1.Name = "journal1";
-            this.journal1.Size = new System.Drawing.Size(140, 435);
-            this.journal1.TabIndex = 27;
-            // 
-            // switcher1
-            // 
-            this.switcher1.Location = new System.Drawing.Point(407, 3);
-            this.switcher1.Name = "switcher1";
-            this.switcher1.Size = new System.Drawing.Size(41, 23);
-            this.switcher1.TabIndex = 27;
-            this.switcher1.TabStop = false;
-            this.switcher1.Click += new System.EventHandler(this.switcher1_Click);
-            // 
-            // journal2
-            // 
-            this.journal2.BackColor = System.Drawing.Color.DarkGray;
-            this.journal2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.journal2.Location = new System.Drawing.Point(387, 61);
-            this.journal2.Name = "journal2";
-            this.journal2.Size = new System.Drawing.Size(140, 435);
-            this.journal2.TabIndex = 31;
-            // 
-            // switcher2
-            // 
-            this.switcher2.Location = new System.Drawing.Point(407, 3);
-            this.switcher2.Name = "switcher2";
-            this.switcher2.Size = new System.Drawing.Size(41, 23);
-            this.switcher2.TabIndex = 27;
-            this.switcher2.TabStop = false;
-            // 
-            // journal3
-            // 
-            this.journal3.BackColor = System.Drawing.Color.DarkGray;
-            this.journal3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.journal3.Location = new System.Drawing.Point(387, 61);
-            this.journal3.Name = "journal3";
-            this.journal3.Size = new System.Drawing.Size(140, 432);
-            this.journal3.TabIndex = 31;
-            // 
-            // journal4
-            // 
-            this.journal4.BackColor = System.Drawing.Color.DarkGray;
-            this.journal4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.journal4.Location = new System.Drawing.Point(387, 61);
-            this.journal4.Name = "journal4";
-            this.journal4.Size = new System.Drawing.Size(140, 435);
-            this.journal4.TabIndex = 27;
-            // 
-            // tools1
-            // 
-            this.tools1.Location = new System.Drawing.Point(358, 179);
-            this.tools1.Name = "tools1";
-            this.tools1.Size = new System.Drawing.Size(200, 100);
-            this.tools1.TabIndex = 0;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2127,6 +2127,7 @@
             this.textPan.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.untoodit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toodit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.switcher2)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.OptionsPage.ResumeLayout(false);
@@ -2134,6 +2135,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ParcePage.ResumeLayout(false);
             this.ParcePage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.switcher1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.CalculatorPage.ResumeLayout(false);
@@ -2145,12 +2147,10 @@
             this.NotePage1.ResumeLayout(false);
             this.NotePage1.PerformLayout();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.NotePage.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.switcher1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.switcher2)).EndInit();
             this.ResumeLayout(false);
 
         }
